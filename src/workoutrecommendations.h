@@ -1,8 +1,29 @@
-//
-// Created by Frederikke Grinderslev on 03/12/2024.
-//
 
-#ifndef WORKOUTRECOMMENDATIONS_H
-#define WORKOUTRECOMMENDATIONS_H
+/* struct to hold workout plan */
+typedef struct {
+    int id;
+    char name[50];
+    char recommendations[1000];
+} workoutRecommendations;
 
-#endif //WORKOUTRECOMMENDATIONS_H
+/* Workout recommendation functions */
+
+
+void retrieveWorkoutRecommendations(User user);
+int calculateID(User user);
+
+/* Functions from other modules */
+/* Function to calculate fitness level based on BMI, WTH and fitness assessment*/
+int calculateFitnessLevel();
+
+/* Function to get feedback from recurring user*/
+int getUserFeedback();
+
+/* Function to get preferences - goals, location, type of workout */
+// int getUserPreferences();
+
+//void giveInitialRecommendations();
+//void giveAdaptedRecommendations();
+//void displayRecommendations(workoutRecommendations *plan);
+
+

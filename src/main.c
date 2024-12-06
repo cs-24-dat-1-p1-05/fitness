@@ -1,32 +1,38 @@
-#include "workoutrecommendations.h"
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
+#include "workoutrecommendations.h"
+#include "user.h"
 
 int main(void) {
+    printf("Welcome to the fitness trainer\n");
 
-    int main() {
-        User user;
+    char response;
+    printf("Are you a new user? y/n: ");
+    scanf(" %c", &response);
 
-        /* Exampel */
-        printf("Welcome to the fitness trainer!\n");
+    if (response == 'y' || response == 'Y') {
+        printf("\nGreat! Let's set up your profile.\n");
+        user_t user = load_user();
+        printf("\nThank you for entering your details!\n");
+        print_user(user);
+        save_user(user);
 
-        /* Collect user input */
-        user = load_user();
-
-        /* Calculate fitness level and get feedback */
-        user.fitnessLevel = calculateFitnessLevel(user);
-        user.feedback = getUserFeedback();
-
-        // Fetch and display workout recommendations
         retrieveWorkoutRecommendations(user);
 
-        return 0;
+    } else if (response == 'n' || response == 'N') {
+        char name[50];
+        printf("\nPlease enter your name: ");
+        scanf("%s", name);
+
+        printf("\nWelcome back, %s!\n", name);
+
+        returning_user(name);
+
+        retrieveWorkoutRecommendations();
+
+    } else {
+        printf("\nInvalid input. Please restart the program and try again.\n");
     }
-
-
-    //giveInitialRecommendations();
-
-    //giveAdaptedRecommendations();
 
     return 0;
 }

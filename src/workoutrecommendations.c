@@ -1,36 +1,156 @@
 #include "workoutrecommendations.h"
+#include "user.h"
 #include <stdio.h>
 #include <string.h>
 
-int calculateID(User user) {
+#include <stdio.h>
+#include <string.h>
+
+/* Function to calculate the Cooper test result */
+int cooper_test() {
+    float distance;
+    printf("Enter the distance you ran in 12 minutes (meters): ");
+    scanf("%f", &distance);
+
+    if (distance < 1000) {
+        return 0;
+    } if (distance < 2000) {
+        return 1;
+    } if (distance > 2000) {
+        return 2;
+    }
+        return 0;
+    }
+
+/* Function to calculate strength training results with equipment */
+int strength_training_with_equipment() {
+    int reps;
+    printf("Enter the number of bench press, shoulder press or squat repetitions at 60 percent of your 1 rep max weight: ");
+    scanf("%d", &reps);
+
+    if (reps < 5) {
+        return 0;
+    } if (reps < 10) {
+        return 1;
+    } if (reps > 10) {
+        return 2;
+    }
+        return 0;
+    }
+
+/* Function to calculate strength training results without equipment */
+int strength_training_without_equipment() {
+    int reps;
+    printf("Enter the number of pushups, situps or splitsquats you can perform in one set: ");
+    scanf("%d", &reps);
+
+    if (reps < 10) {
+        return 0;
+    } if (reps < 20) {
+        return 1;
+    } if (reps > 20) {
+        return 2;
+    }
+        return 0;
+    }
+
+/* Function to calculate the walking test result */
+int walking_test() {
+    float distance;
+    printf("Enter the distance you walked in 6 minutes (meters): ");
+    scanf("%f", &distance);
+
+    if (distance < 300) {
+        return 0;
+    } if (distance < 500) {
+        return 1;
+    } if (distance > 500) {
+        return 2;
+    }
+    return 0;
+}
+
+/* Function to select and perform the appropriate fitness assessment */
+int select_assessment(int activity, int location) {
+    if (activity == 1) {
+        printf("Selected assessment: Cooper Test\n");
+        return cooper_test();
+    } if (activity == 3) {
+        if (location  == 2) {
+            printf("Selected assessment: Strength Training (with equipment)\n");
+            return strength_training_with_equipment();
+        } if (location  == 1) {
+            printf("Selected assessment: Strength Training (without equipment)\n");
+            return strength_training_without_equipment();
+        }
+    } else if (activity == 2) {
+        printf("Selected assessment: Walking Test\n");
+        return walking_test();
+    } else if (activity == 4) {
+        if (location  == 2) {
+            printf("Selected assessments: Cooper Test and Strength Training (with equipment)\n");
+            return cooper_test()+strength_training_with_equipment()/2;
+        } if (location  == 1) {
+            printf("Selected assessments: Cooper Test and Strength Training (without equipment)\n");
+            return cooper_test()/strength_training_without_equipment()/2;
+        }
+    } else {
+        printf("Error: Invalid activity.\n");
+        return 0;
+    }
+}
+
+int calculate_fitness_level(user_t user) {
+
+    int fitness_level = 1;
+
+    /* BMI contribution */
+    if (user.fitness_assessment_bmi < 24.9) {
+        fitness_level++;
+    }
+
+    /* WHR contribution */
+    if ((user.gender == 1 && user.fitness_assessment_whr < 0.95) ||
+        (user.gender == 2 && user.fitness_assessment_whr < 0.8)) {
+        fitness_level++;
+        }
+
+    fitness_level += select_assessment(user.preferences, user.location);
+
+    return fitness_level;
+}
+
+int calculateID(user_t user) {
     int id = 0;
 
-    if (strcmp(user.exercisePurpose, "Lose Weight") == 0) {
+    if (strcmp(user.exercise_purpose, "Weight Loss") == 0) {
         id = 1;  /* Starting range for weight loss programs */
-    } else if (strcmp(user.exercisePurpose, "Improve Cardio") == 0) {
+    } else if (strcmp(user.exercise_purpose, "Muscle Gain") == 0) {
         id = 11;  /* Starting range for cardio programs */
-    } else if (strcmp(user.exercisePurpose, "Build Muscle") == 0) {
+    } else if (strcmp(user.exercise_purpose, "Improve Cardio") == 0) {
         id = 21; /* Starting range for muscle-building programs */
-    } else if (strcmp(user.exercisePurpose, "Maintain fitness") == 0) {
+    } else if (strcmp(user.exercise_purpose, "General Health") == 0) {
     id = 31; /* Starting range for maintaining fitness programs */
 }
 
     /* Basing baseID on fitnesslevel. Assumes fitness level is an int, beginner = 1 etc
      * -1, so level 1 makes no change, level 2 makes 1, and so on */
-    id += user.fitnessLevel - 1;
-    id += user.feecback;
+    id += user.fitness_level - 1;
+    id += user.feedback;
 
     /* Adjust further based on preferences */
-    if (strcmp(user.exercise_preferences, "At Home, Walking") == 0) {
+    if (user.preferences == 1) {
         return id;
-    } else if (strcmp(user.exercise_preferences, "At Home, Running") == 0) {
+    } if (user.preferences == 2) {
         return id + 1;
-    } else if (strcmp(user.exercise_preferences, "At Home, Strength") == 0) {
+    } if (user.preferences == 3 && user.location == 1) {
         return id  + 2;
-    } else if (strcmp(user.exercise_preferences, "At Home, Both") == 0) {
-        return id + 3;
-    } else if (strcmp(user.exercise_preferences, "Gym, Both") == 0) {
+    } if (user.preferences == 3 && user.location == 2) {
+        return id  + 2;
+    }if (user.preferences == 4 && user.location == 1) {
         return id + 4;
+    } if (user.preferences == 4 && user.location == 2) {
+        return id + 5;
     }
 
     return id;
@@ -38,7 +158,7 @@ int calculateID(User user) {
 }
 
 
-void retrieveWorkoutRecommendations(User user) {
+void retrieveWorkoutRecommendations(user_t user) {
 
     int id = calculateID(user);
 
@@ -69,46 +189,16 @@ void retrieveWorkoutRecommendations(User user) {
     fclose(file);
 }
 
+int get_user_feedback() {
+    printf("How was the last workout?\n");
+    printf("1. Too hard\n2. Too easy\n3. Not effective\nEnter your feedback: ");
+    int feedback;
+    scanf("%d", &feedback);
 
-
-
-
-
-
-
-/* void giveInitialRecommendation() {
-
-    char goal[20], location[20], workoutType[20];
-    /* Retrieve user fitness level (initial input module) */
-    /*int fitnessLevel = calculateFitnessLevel();
-
-    /* Retrieve user preferences (initial input module) */
-    /*int preferences = getUserPreferences(goal, location, workoutType);
-
-    /* Get workout recommendations based on user fitness level and preferences */
-    /*retrieveWorkoutPlans();
-
-    // Display the initial recommendations
-    printf("\n--- Initial Workout Recommendations ---\n");
-    displayRecommendations();
-
-}
-
-void giveAdaptedRecommendations() {
-
-    int fitnesslevel;
-    workoutRecommendations workouts[10];
-
-    /* Calls feedback function from secondary input module */
-    /*int feedback = getUserFeedback();
-
-    /* Adjust recommendations based on feedback */
-    /*if (feedback == 1) {
-        printf("Finding easier workout recommendations...\n");
-    } else if (feedback == 2) {
-        printf("Finding harder workout recommendations...\n");
-    } else {
-        printf("Finding new, similar workout recommendations...\n");
+    if (feedback == 1) {
+        return -1;
+    } if (feedback == 2) {
+        return 1;
     }
+    return 0;
 }
-*/

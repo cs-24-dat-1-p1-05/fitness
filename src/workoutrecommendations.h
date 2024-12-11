@@ -9,14 +9,14 @@ typedef struct {
 
 /* Workout recommendation functions */
 
-int cooper_test();
-int strength_training_with_equipment();
-int strength_training_without_equipment();
-int walking_test();
+int cooper_test(void);
+int strength_training_with_equipment(void);
+int strength_training_without_equipment(void);
+int walking_test(void);
 int select_assessment(int activity, int location);
-
-void retrieveWorkoutRecommendations(user_t user);
-int calculateID(user_t user);
+int calculate_id(user_t user);
+char* retrieve_workoutrecommendations(int recommendation_id);
+int get_user_feedback(void);
 
 /* Functions from other modules */
 /* Function to calculate fitness level based on BMI, WTH and fitness assessment*/

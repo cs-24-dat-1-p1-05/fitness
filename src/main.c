@@ -1,37 +1,42 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "workoutrecommendations.h"
+#include "workoutrecommendations.h"  // Include the header file for the recommendations
 #include "user.h"
 
-int main(void) {
-    printf("Welcome to the fitness trainer\n");
+int main() {
+    int user_choice;
+    user_t user;
+    user_t new_user;
 
-    char response;
-    printf("Are you a new user? y/n: ");
-    scanf(" %c", &response);
+    printf("Welcome to the Fitness Tracker!\n");
+    printf("\nSelect an option:\n");
+    printf("1. Create new user\n");
+    printf("2. View existing user\n");
+    printf("3. Exit\n");
+    printf("Enter your choice: ");
+    scanf("%d", &user_choice);
 
-    if (response == 'y' || response == 'Y') {
-        printf("\nGreat! Let's set up your profile.\n");
-        user_t user = load_user();
-        printf("\nThank you for entering your details!\n");
-        print_user(user);
-        save_user(user);
-
-        retrieveWorkoutRecommendations(user);
-
-    } else if (response == 'n' || response == 'N') {
-        char name[50];
-        printf("\nPlease enter your name: ");
+    if (user_choice == 2) {
+        char name[100];
+        printf("Enter the name of the existing user: ");
         scanf("%s", name);
 
-        printf("\nWelcome back, %s!\n", name);
+        // Assuming you have a function to check and load user data
+        // For now, let's assume user data is found and display recommendations
 
-        returning_user(name);
+        int recommendation_id = calculate_id(user);
+        printf("Recommendation ID: %d\n", recommendation_id);
 
-        retrieveWorkoutRecommendations();
+        // Display the recommendation based on the ID
+        display_recommendation(recommendation_id);
 
-    } else {
-        printf("\nInvalid input. Please restart the program and try again.\n");
+    } else if (user_choice == 1) {
+        user_t user = load_user();
+        save_user(user);
+    } else if (user_choice == 3) {
+        // Exit the program
+        printf("Exiting the program...\n");
+        return 0;
     }
 
     return 0;

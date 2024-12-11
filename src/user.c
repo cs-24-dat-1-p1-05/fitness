@@ -3,6 +3,7 @@
 #include "user.h"
 #include "workoutrecommendations.h"
 
+#define MAX_
 // Function to calculate BMI
 float calculate_bmi(int height, float weight) {
     float height_in_meters = height / 100.0;
@@ -59,6 +60,7 @@ void print_user(user_t user) {
             printf("WHR Health Risk: High\n");
         }
     }
+    printf("Recommendation ID: %d\n", user.recommendation_id);
 }
 
 // Function to load user details
@@ -159,6 +161,7 @@ user_t load_user(void) {
     new_user.fitness_assessment_bmi = calculate_bmi(new_user.height, new_user.weight);
     new_user.fitness_assessment_whr = calculate_whr(new_user.waist, new_user.hip);
     new_user.fitness_level = calculate_fitness_level(new_user);
+    new_user.recommendation_id = calculate_id(new_user);
 
     new_user.feedback = 0;
 
@@ -205,39 +208,93 @@ void save_user(user_t user) {
             fprintf(file, "WHR Health Risk: High\n");
         }
     }
+    fprintf(file, "Recommendation ID: %d\n", user.recommendation_id);
     fprintf(file, "\n----------------------------\n");
 
     fclose(file);  // Close the file
 }
 
+// Function to remove trailing newline or spaces
+void strip_newline_and_spaces(char *str) {
+    // Remove trailing newline, if any
+    str[strcspn(str, "\n")] = 0;
+
+    // Remove trailing spaces
+    int len = strlen(str);
+    while (len > 0 && (str[len - 1] == ' ' || str[len - 1] == '\t')) {
+        str[len - 1] = '\0';
+        len--;
+    }
+}
+
 // Function to handle returning user logic
-int returning_user(char *name) {
+user_t returning_user(const char *name) {
+    user_t user = {0};
     FILE *file = fopen("users.txt", "r");  // Open file in read mode
     if (file == NULL) {
         printf("Error: Could not open file to read data.\n");
-        return 0;
+        return user;
     }
 
-    char line[200];
+    char line[MAX_LINE_LENGTH];
     int user_found = 0;
 
-    // Read through the file to find the user by name
+    // Loop through each line in the file
     while (fgets(line, sizeof(line), file)) {
-        if (strstr(line, name) != NULL) {  // Check if name is found
+        strip_newline_and_spaces(line);  // Clean up the line
+
+        // Look for a match with the name
+        if (strstr(line, name) != NULL) {
             user_found = 1;
             printf("User Found: %s\n", name);
 
-            // Print the user's details
+            // Print all details of the found user
             do {
-                printf("%s", line);
+                printf("%s\n", line);
             } while (fgets(line, sizeof(line), file) && line[0] != '\n');
             break;
         }
     }
 
     fclose(file);  // Close the file
+
     if (!user_found) {
-        printf("No profile found for %s. Please create a new profile.\n", name);
+        printf("User not found!\n");
     }
-    return user_found;
+
+    return user;
+}
+void display_recommendation(int recommendation_id) {
+    FILE *file = fopen("recommendations.txt", "r");
+    if (!file) {
+        printf("Error opening recommendations file.\n");
+        return;
+    }
+
+    char line[256];
+    int current_id = 0;
+    int is_in_recommendation = 0;
+
+    while (fgets(line, sizeof(line), file)) {
+        if (line[0] == '#') {
+            current_id++;
+        }
+
+        if (current_id == recommendation_id) {
+            // Print the recommendation
+            printf("%s", line);
+            is_in_recommendation = 1;
+        }
+
+        // After printing the recommendation, print until we hit the next recommendation ID.
+        if (current_id == recommendation_id && line[0] == '#') {
+            break;
+        }
+    }
+
+    if (!is_in_recommendation) {
+        printf("No recommendation found with ID %d\n", recommendation_id);
+    }
+
+    fclose(file);
 }

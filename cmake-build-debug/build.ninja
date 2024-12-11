@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/
+cmake_ninja_workdir = /Users/celina/Documents/GitHub/fitness/cmake-build-debug/
 
 #############################################
 # Utility command for test
 
 build CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest --force-new-ctest-process
+  COMMAND = cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build test: phony CMakeFiles/test.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -68,7 +68,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/frederikke/Documents/GitHub/fitness -B/Users/frederikke/Documents/GitHub/fitness/cmake-build-debug
+  COMMAND = cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/celina/Documents/GitHub/fitness -B/Users/celina/Documents/GitHub/fitness/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -77,7 +77,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/frederikke/Documents/GitHub/fitness/CMakeLists.txt
+# /Users/celina/Documents/GitHub/fitness/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -89,17 +89,24 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_fitness: phony || .
 
-build src/CMakeFiles/fitness.dir/main.c.o: C_COMPILER__fitness_unscanned_Debug /Users/frederikke/Documents/GitHub/fitness/src/main.c || cmake_object_order_depends_target_fitness
+build src/CMakeFiles/fitness.dir/main.c.o: C_COMPILER__fitness_unscanned_Debug /Users/celina/Documents/GitHub/fitness/src/main.c || cmake_object_order_depends_target_fitness
   DEP_FILE = src/CMakeFiles/fitness.dir/main.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.7 -fcolor-diagnostics
-  INCLUDES = -I/Users/frederikke/Documents/GitHub/fitness/.
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
   OBJECT_DIR = src/CMakeFiles/fitness.dir
   OBJECT_FILE_DIR = src/CMakeFiles/fitness.dir
 
-build src/CMakeFiles/fitness.dir/workoutrecommendations.c.o: C_COMPILER__fitness_unscanned_Debug /Users/frederikke/Documents/GitHub/fitness/src/workoutrecommendations.c || cmake_object_order_depends_target_fitness
+build src/CMakeFiles/fitness.dir/workoutrecommendations.c.o: C_COMPILER__fitness_unscanned_Debug /Users/celina/Documents/GitHub/fitness/src/workoutrecommendations.c || cmake_object_order_depends_target_fitness
   DEP_FILE = src/CMakeFiles/fitness.dir/workoutrecommendations.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.7 -fcolor-diagnostics
-  INCLUDES = -I/Users/frederikke/Documents/GitHub/fitness/.
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = src/CMakeFiles/fitness.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/fitness.dir
+
+build src/CMakeFiles/fitness.dir/user.c.o: C_COMPILER__fitness_unscanned_Debug /Users/celina/Documents/GitHub/fitness/src/user.c || cmake_object_order_depends_target_fitness
+  DEP_FILE = src/CMakeFiles/fitness.dir/user.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
   OBJECT_DIR = src/CMakeFiles/fitness.dir
   OBJECT_FILE_DIR = src/CMakeFiles/fitness.dir
 
@@ -111,8 +118,8 @@ build src/CMakeFiles/fitness.dir/workoutrecommendations.c.o: C_COMPILER__fitness
 #############################################
 # Link the executable src/fitness
 
-build src/fitness: C_EXECUTABLE_LINKER__fitness_Debug src/CMakeFiles/fitness.dir/main.c.o src/CMakeFiles/fitness.dir/workoutrecommendations.c.o
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.7
+build src/fitness: C_EXECUTABLE_LINKER__fitness_Debug src/CMakeFiles/fitness.dir/main.c.o src/CMakeFiles/fitness.dir/workoutrecommendations.c.o src/CMakeFiles/fitness.dir/user.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0
   OBJECT_DIR = src/CMakeFiles/fitness.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -124,7 +131,7 @@ build src/fitness: C_EXECUTABLE_LINKER__fitness_Debug src/CMakeFiles/fitness.dir
 # Utility command for test
 
 build src/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest --force-new-ctest-process
+  COMMAND = cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -136,7 +143,7 @@ build src/test: phony src/CMakeFiles/test.util
 # Utility command for edit_cache
 
 build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -147,7 +154,7 @@ build src/edit_cache: phony src/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/frederikke/Documents/GitHub/fitness -B/Users/frederikke/Documents/GitHub/fitness/cmake-build-debug
+  COMMAND = cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/celina/Documents/GitHub/fitness -B/Users/celina/Documents/GitHub/fitness/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -165,14 +172,14 @@ build fitness: phony src/fitness
 # =============================================================================
 
 #############################################
-# Folder: /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug
+# Folder: /Users/celina/Documents/GitHub/fitness/cmake-build-debug
 
 build all: phony src/all
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src
+# Folder: /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src
 
 build src/all: phony src/fitness
 
@@ -183,14 +190,14 @@ build src/all: phony src/fitness
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Users/frederikke/Documents/GitHub/fitness/CMakeLists.txt /Users/frederikke/Documents/GitHub/fitness/src/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Users/celina/Documents/GitHub/fitness/CMakeLists.txt /Users/celina/Documents/GitHub/fitness/src/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Users/frederikke/Documents/GitHub/fitness/CMakeLists.txt /Users/frederikke/Documents/GitHub/fitness/src/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Users/celina/Documents/GitHub/fitness/CMakeLists.txt /Users/celina/Documents/GitHub/fitness/src/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
 
 
 #############################################

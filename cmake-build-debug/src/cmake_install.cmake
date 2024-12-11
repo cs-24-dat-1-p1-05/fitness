@@ -1,4 +1,4 @@
-# Install script for directory: /Users/frederikke/Documents/GitHub/fitness/src
+# Install script for directory: /Users/celina/Documents/GitHub/fitness/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

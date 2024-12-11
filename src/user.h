@@ -1,32 +1,37 @@
+// user.h
 #ifndef USER_H
 #define USER_H
-
-// Structure for user information
+#define MAX_LINE_LENGTH 1024
+// Structure to hold user information
 typedef struct {
-    char name[50];
+    char name[100];
     int age;
-    int gender;
-    int height;  // in cm
-    float weight;  // in kg
-    int hip;     // in cm
-    int waist;   // in cm
-    int location;
-    int preferences;
+    int gender; // 1 for male, 2 for female
+    int height;
+    float weight;
+    int hip;
+    int waist;
+    int location; // 1 for home, 2 for gym
+    int preferences; // 1 for running, 2 for walking, 3 for strength, 4 for combination
     char exercise_purpose[50];
     int exercise_days_per_week;
     float fitness_assessment_bmi;
     float fitness_assessment_whr;
     int fitness_level;
+    int recommendation_id;
     int feedback;
 } user_t;
 
-// Function prototypes
-float calculate_bmi(int height, float weight);  // Calculate BMI
-const char* calculate_bmi_category(float bmi); // Categorize BMI
-float calculate_whr(int waist, int hip);      // Calculate WHR
-void print_user(user_t user);                 // Print user details
-user_t load_user(void);                       // Load user details from input
-void save_user(user_t user);                  // Save user data to a file
-int returning_user(char *name);               // Load and print details of a returning user
+// Function declarations
+float calculate_bmi(int height, float weight);
+const char* calculate_bmi_category(float bmi);
+float calculate_whr(int waist, int hip);
+void print_user(user_t user);
+user_t load_user(void);
+void save_user(user_t user);
+user_t returning_user(const char *name);
+void display_recommendation(int recommendation_id);
+int calculate_fitness_level(user_t user);
+
 
 #endif // USER_H

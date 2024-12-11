@@ -1,7 +1,6 @@
 #include "workoutrecommendations.h"
 #include "user.h"
-#include <stdio.h>
-#include <string.h>
+
 
 #include <stdio.h>
 #include <string.h>
@@ -98,6 +97,7 @@ int select_assessment(int activity, int location) {
         printf("Error: Invalid activity.\n");
         return 0;
     }
+    return 0;
 }
 
 int calculate_fitness_level(user_t user) {
@@ -120,17 +120,18 @@ int calculate_fitness_level(user_t user) {
     return fitness_level;
 }
 
-int calculateID(user_t user) {
+int calculate_id(user_t user) {
+
     int id = 0;
 
-    if (strcmp(user.exercise_purpose, "Weight Loss") == 0) {
+    if (strcmp(user.exercise_purpose, "Weight Loss") == 1) {
         id = 1;  /* Starting range for weight loss programs */
-    } else if (strcmp(user.exercise_purpose, "Muscle Gain") == 0) {
-        id = 11;  /* Starting range for cardio programs */
-    } else if (strcmp(user.exercise_purpose, "Improve Cardio") == 0) {
-        id = 21; /* Starting range for muscle-building programs */
-    } else if (strcmp(user.exercise_purpose, "General Health") == 0) {
-    id = 31; /* Starting range for maintaining fitness programs */
+    } else if (strcmp(user.exercise_purpose, "Muscle Gain") == 2) {
+        id = 2;  /* Starting range for cardio programs */
+    } else if (strcmp(user.exercise_purpose, "Improve Cardio") == 3) {
+        id = 3; /* Starting range for muscle-building programs */
+    } else if (strcmp(user.exercise_purpose, "General Health") == 4) {
+    id = 4; /* Starting range for maintaining fitness programs */
 }
 
     /* Basing baseID on fitnesslevel. Assumes fitness level is an int, beginner = 1 etc
@@ -160,7 +161,7 @@ int calculateID(user_t user) {
 
 void retrieveWorkoutRecommendations(user_t user) {
 
-    int id = calculateID(user);
+    int id = calculate_id(user);
 
     FILE *file = fopen("fitnessdatabse.txt", "r");
     if (!file) {

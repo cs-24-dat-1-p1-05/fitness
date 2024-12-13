@@ -32,6 +32,7 @@ void save_user(user_t user);
 user_t returning_user(const char *name);
 void display_recommendation(int recommendation_id);
 int calculate_fitness_level(user_t user);
+void trim_newline(char *str);
 
 
 #endif // USER_H

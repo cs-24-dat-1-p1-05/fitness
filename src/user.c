@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 #include "user.h"
+
+#include <stdlib.h>
+
 #include "workoutrecommendations.h"
 
 #define MAX_
@@ -226,40 +229,76 @@ void strip_newline_and_spaces(char *str) {
         len--;
     }
 }
-
+void trim_newline(char *str) {
+    char *pos;
+    if ((pos = strchr(str, '\n')) != NULL) {
+        *pos = '\0';
+    }
+}
 // Function to handle returning user logic
 user_t returning_user(const char *name) {
-    user_t user = {0};
-    FILE *file = fopen("users.txt", "r");  // Open file in read mode
+    FILE *file = fopen("users.txt", "r");
+    user_t user;
+    char line[256];
+    int found = 0;
+
     if (file == NULL) {
-        printf("Error: Could not open file to read data.\n");
-        return user;
+        printf("Error: Unable to open user data file.\n");
+        exit(1);
     }
 
-    char line[MAX_LINE_LENGTH];
-    int user_found = 0;
+    // Initialize user with default values in case not found
+    user_t not_found_user = {"", 0, 0, 0, 0, 0, 0, 0, 0, "", 0, 0, 0, -1};
 
-    // Loop through each line in the file
     while (fgets(line, sizeof(line), file)) {
-        strip_newline_and_spaces(line);  // Clean up the line
+        trim_newline(line);
 
-        // Look for a match with the name
-        if (strstr(line, name) != NULL) {
-            user_found = 1;
-            printf("User Found: %s\n", name);
+        // Check for the "Name" line
+        if (strncmp(line, "Name: ", 6) == 0) {
+            char user_name[50];
+            strcpy(user_name, line + 6); // Extract name after "Name: "
 
-            // Print all details of the found user
-            do {
-                printf("%s\n", line);
-            } while (fgets(line, sizeof(line), file) && line[0] != '\n');
-            break;
+            if (strcasecmp(user_name, name) == 0) {
+                // Name matches; start parsing the user details
+                strcpy(user.name, user_name);
+                found = 1;
+
+                // Read the rest of the user's data
+                while (fgets(line, sizeof(line), file) && strncmp(line, "----------------------------", 28) != 0) {
+                    trim_newline(line);
+
+                    if (sscanf(line, "Age: %d", &user.age) == 1) continue;
+                    if (strstr(line, "Gender: ") && strstr(line, "Female")) {
+                        user.gender = 0;  // Assuming Female = 0
+                        continue;
+                    } else if (strstr(line, "Gender: ") && strstr(line, "Male")) {
+                        user.gender = 1;  // Assuming Male = 1
+                        continue;
+                    }
+                    if (sscanf(line, "Height: %d cm", &user.height) == 1) continue;
+                    if (sscanf(line, "Weight: %f", &user.weight) == 1) continue;
+                    if (sscanf(line, "Hip: %d cm", &user.hip) == 1) continue;
+                    if (sscanf(line, "Waist: %d cm", &user.waist) == 1) continue;
+                    if (sscanf(line, "Location: %d", &user.location) == 1) continue;
+                    if (sscanf(line, "Preferences: %d", &user.preferences) == 1) continue;
+                    if (sscanf(line, "Exercise Purpose: %49[^\n]", user.exercise_purpose) == 1) continue;
+                    if (sscanf(line, "Exercise Days per Week: %d", &user.exercise_days_per_week) == 1) continue;
+                    if (sscanf(line, "Fitness Assessment (BMI): %f", &user.fitness_assessment_bmi) == 1) continue;
+                    if (sscanf(line, "Fitness Assessment (WHR): %f", &user.fitness_assessment_whr) == 1) continue;
+                    if (sscanf(line, "Recommendation ID: %d", &user.recommendation_id) == 1) continue;
+                }
+
+                // Exit the loop as the user is found
+                break;
+            }
         }
     }
 
-    fclose(file);  // Close the file
+    fclose(file);
 
-    if (!user_found) {
-        printf("User not found!\n");
+    // If the user is not found, return a default user
+    if (!found) {
+        return not_found_user;
     }
 
     return user;

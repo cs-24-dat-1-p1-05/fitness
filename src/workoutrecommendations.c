@@ -3,7 +3,10 @@
 
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
+
+#define TEMP_FILE "temp_users.txt"
 
 /* Function to calculate the Cooper test result */
 int cooper_test() {
@@ -127,11 +130,11 @@ int calculate_id(user_t user) {
     if (strcmp(user.exercise_purpose, "Weight Loss") == 1) {
         id = 1;  /* Starting range for weight loss programs */
     } else if (strcmp(user.exercise_purpose, "Muscle Gain") == 2) {
-        id = 2;  /* Starting range for cardio programs */
+        id = 4;  /* Starting range for cardio programs */
     } else if (strcmp(user.exercise_purpose, "Improve Cardio") == 3) {
-        id = 3; /* Starting range for muscle-building programs */
+        id = 8; /* Starting range for muscle-building programs */
     } else if (strcmp(user.exercise_purpose, "General Health") == 4) {
-    id = 4; /* Starting range for maintaining fitness programs */
+    id = 12; /* Starting range for maintaining fitness programs */
 }
 
     /* Basing baseID on fitnesslevel. Assumes fitness level is an int, beginner = 1 etc
@@ -203,3 +206,97 @@ int get_user_feedback() {
     }
     return 0;
 }
+int adjust_recommendation(user_t *user, int feedback) {
+    printf("Adjusting recommendation for user: %s\n", user->name);
+    printf("Initial Recommendation ID: %d\n", user->recommendation_id);
+
+    if (feedback == -1) { // Too hard
+        if (user->recommendation_id > 1) {
+            user->recommendation_id -= 1; // Assign an easier program
+        }
+    } else if (feedback == 1) { // Too easy
+        user->recommendation_id += 1; // Assign a more challenging program
+    } else if (feedback == 0) { // Not effective
+        // Change to a program in the same category but different focus
+        if (user->recommendation_id % 2 == 0) { // Even ID: switch to odd
+            user->recommendation_id -= 1;
+        } else { // Odd ID: switch to even
+            user->recommendation_id += 1;
+        }
+    }
+
+    // Enforce valid minimum value
+    if (user->recommendation_id < 1) {
+        printf("Recommendation ID is invalid. Resetting to minimum valid value (1).\n");
+        user->recommendation_id = 1;
+    }
+
+    printf("Final Recommendation ID: %d\n", user->recommendation_id);
+    return user->recommendation_id;
+}
+
+
+
+void update_user_file(const char *name, int recommendation_id) {
+    FILE *file = fopen("users.txt", "r");
+    if (!file) {
+        perror("Error opening users.txt for reading");
+        exit(EXIT_FAILURE);
+    }
+
+    FILE *temp_file = fopen("users_temp.txt", "w");
+    if (!temp_file) {
+        perror("Error opening temporary file for writing");
+        fclose(file);
+        exit(EXIT_FAILURE);
+    }
+
+    char buffer[MAX_LINE_LENGTH];
+    char current_user[100] = "";
+    int is_target_user = 0;
+    int recommendation_updated = 0;
+
+    printf("Starting update for user: %s\n", name);
+    printf("Target Recommendation ID: %d\n", recommendation_id);
+
+    // Process each line
+    while (fgets(buffer, sizeof(buffer), file)) {
+        printf("Processing line: %s", buffer);
+
+        // Detect user block by name
+        if (strncmp(buffer, "Name:", 5) == 0) {
+            sscanf(buffer, "Name: %99[^\n]", current_user);
+            is_target_user = (strcmp(current_user, name) == 0);
+            printf("Current user: %s (Is target: %d)\n", current_user, is_target_user);
+        }
+
+        // Update "Recommendation ID" for the target user
+        if (is_target_user && strncmp(buffer, "Recommendation ID:", 18) == 0) {
+            printf("Found Recommendation ID for user %s: %s", name, buffer);
+            snprintf(buffer, sizeof(buffer), "Recommendation ID: %d\n", recommendation_id);
+            recommendation_updated = 1;
+            printf("Updated line: %s", buffer);
+        }
+
+        // Write the current line to the temp file
+        fputs(buffer, temp_file);
+    }
+
+    // If the target user was processed but no Recommendation ID found, add it
+    if (is_target_user && !recommendation_updated) {
+        printf("No Recommendation ID found for user %s. Adding new Recommendation ID: %d\n", name, recommendation_id);
+        fprintf(temp_file, "Recommendation ID: %d\n", recommendation_id);
+    }
+
+    fclose(file);
+    fclose(temp_file);
+
+    // Replace the original file with the updated one
+    if (rename("users_temp.txt", "users.txt") != 0) {
+        perror("Error replacing users.txt with updated file");
+        exit(EXIT_FAILURE);
+    }
+
+    printf("Successfully updated Recommendation ID for user %s to %d.\n", name, recommendation_id);
+}
+

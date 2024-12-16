@@ -2,6 +2,7 @@
 #include <string.h>
 #include "user.h"
 
+#include <stdbool.h>
 #include <stdlib.h>
 
 #include "workoutrecommendations.h"
@@ -212,7 +213,8 @@ void save_user(user_t user) {
         }
     }
     fprintf(file, "Recommendation ID: %d\n", user.recommendation_id);
-    fprintf(file, "\n----------------------------\n");
+
+    fprintf(file, "----------------------------\n");
 
     fclose(file);  // Close the file
 }
@@ -311,23 +313,25 @@ void display_recommendation(int recommendation_id) {
     }
 
     char line[256];
-    int current_id = 0;
-    int is_in_recommendation = 0;
+    int current_id = recommendation_id;
+    int is_in_recommendation = 0; // Boolean flag to indicate we're in the correct block
 
     while (fgets(line, sizeof(line), file)) {
-        if (line[0] == '#') {
+        // Check if this line starts a new recommendation block
+        if (strncmp(line, "#ID", 3) > 0) {
             current_id++;
+            // Check if this is the desired recommendation ID
+            if (current_id == recommendation_id) {
+                is_in_recommendation = 1; // Start printing lines from this block
+            } else if (is_in_recommendation) {
+                // We've reached a new block; stop printing
+                break;
+            }
         }
 
-        if (current_id == recommendation_id) {
-            // Print the recommendation
+        // Print lines if we are inside the desired recommendation block
+        if (is_in_recommendation) {
             printf("%s", line);
-            is_in_recommendation = 1;
-        }
-
-        // After printing the recommendation, print until we hit the next recommendation ID.
-        if (current_id == recommendation_id && line[0] == '#') {
-            break;
         }
     }
 

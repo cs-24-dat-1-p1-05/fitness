@@ -1,2 +1,3 @@
 
-add_executable(fitness main.c workoutrecommendations.c user.c)
+add_executable(fitness main.c workoutrecommendations.c user.c
+       )

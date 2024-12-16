@@ -2,53 +2,16 @@ Name: clara
 Age: 25
 Gender: Female
 Height: 177 cm
-Weight: 75.000000 kg
-Hip: 105 cm
-Waist: 100 cm
-Location: 1
-Preferences: 2
-Exercise Purpose: Weight Loss
-Exercise Days per Week: 3
-Fitness Assessment (BMI): 23.94
-BMI Category: Normal weight
-Fitness Assessment (WHR): 0.95
-WHR Health Risk: High
-Recommendation ID: 4
-
-----------------------------
-Name: Hannah
-Age: 25
-Gender: Female
-Height: 177 cm
-Weight: 76.000000 kg
-Hip: 87 cm
-Waist: 86 cm
-Location: 1
+Weight: 74.000000 kg
+Hip: 96 cm
+Waist: 83 cm
+Location: 2
 Preferences: 4
 Exercise Purpose: General Health
 Exercise Days per Week: 3
-Fitness Assessment (BMI): 24.26
+Fitness Assessment (BMI): 23.62
 BMI Category: Normal weight
-Fitness Assessment (WHR): 0.99
-WHR Health Risk: High
-Recommendation ID: 6
-
-----------------------------
-Name: hannah
-Age: 25
-Gender: Female
-Height: 177 cm
-Weight: 76.000000 kg
-Hip: 87 cm
-Waist: 84 cm
-Location: 1
-Preferences: 4
-Exercise Purpose: General Health
-Exercise Days per Week: 3
-Fitness Assessment (BMI): 24.26
-BMI Category: Normal weight
-Fitness Assessment (WHR): 0.97
+Fitness Assessment (WHR): 0.86
 WHR Health Risk: High
 Recommendation ID: 5
-
 ----------------------------

@@ -23,7 +23,6 @@ typedef struct {
     int new_recommendation_id;
     const char * adjust_recommendation;
     int update_user_file;
-
 } user_t;
 
 // Function declarations
@@ -40,7 +39,6 @@ void trim_newline(char *str);
 int adjust_recommendation(user_t *user, int feedback);
 //void update_user_file(const char *name, user_t *user);
 void update_user_file(const char *name, int recommendation_id);
-
 
 
 #endif // USER_H

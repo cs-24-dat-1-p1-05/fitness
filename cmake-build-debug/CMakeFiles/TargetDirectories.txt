@@ -5,3 +5,14 @@
 /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src/CMakeFiles/test.dir
 /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src/CMakeFiles/edit_cache.dir
 /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/test/CMakeFiles/test_load_user.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/test/CMakeFiles/test_save_user.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/test/CMakeFiles/test_returning_user.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/test/CMakeFiles/test_update_user_files.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/test/CMakeFiles/test_calculate_id.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/test/CMakeFiles/test_display_recommendation.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/test/CMakeFiles/test_adjust_recommendation.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/test/CMakeFiles/run_tests.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/test/CMakeFiles/test.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/test/CMakeFiles/edit_cache.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir

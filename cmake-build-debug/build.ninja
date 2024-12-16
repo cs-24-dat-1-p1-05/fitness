@@ -96,15 +96,15 @@ build src/CMakeFiles/fitness.dir/main.c.o: C_COMPILER__fitness_unscanned_Debug /
   OBJECT_DIR = src/CMakeFiles/fitness.dir
   OBJECT_FILE_DIR = src/CMakeFiles/fitness.dir
 
-build src/CMakeFiles/fitness.dir/workoutrecommendations.c.o: C_COMPILER__fitness_unscanned_Debug /Users/celina/Documents/GitHub/fitness/src/workoutrecommendations.c || cmake_object_order_depends_target_fitness
-  DEP_FILE = src/CMakeFiles/fitness.dir/workoutrecommendations.c.o.d
+build src/CMakeFiles/fitness.dir/user.c.o: C_COMPILER__fitness_unscanned_Debug /Users/celina/Documents/GitHub/fitness/src/user.c || cmake_object_order_depends_target_fitness
+  DEP_FILE = src/CMakeFiles/fitness.dir/user.c.o.d
   FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
   INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
   OBJECT_DIR = src/CMakeFiles/fitness.dir
   OBJECT_FILE_DIR = src/CMakeFiles/fitness.dir
 
-build src/CMakeFiles/fitness.dir/user.c.o: C_COMPILER__fitness_unscanned_Debug /Users/celina/Documents/GitHub/fitness/src/user.c || cmake_object_order_depends_target_fitness
-  DEP_FILE = src/CMakeFiles/fitness.dir/user.c.o.d
+build src/CMakeFiles/fitness.dir/workoutrecommendations.c.o: C_COMPILER__fitness_unscanned_Debug /Users/celina/Documents/GitHub/fitness/src/workoutrecommendations.c || cmake_object_order_depends_target_fitness
+  DEP_FILE = src/CMakeFiles/fitness.dir/workoutrecommendations.c.o.d
   FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
   INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
   OBJECT_DIR = src/CMakeFiles/fitness.dir
@@ -118,7 +118,7 @@ build src/CMakeFiles/fitness.dir/user.c.o: C_COMPILER__fitness_unscanned_Debug /
 #############################################
 # Link the executable src/fitness
 
-build src/fitness: C_EXECUTABLE_LINKER__fitness_Debug src/CMakeFiles/fitness.dir/main.c.o src/CMakeFiles/fitness.dir/workoutrecommendations.c.o src/CMakeFiles/fitness.dir/user.c.o
+build src/fitness: C_EXECUTABLE_LINKER__fitness_Debug src/CMakeFiles/fitness.dir/main.c.o src/CMakeFiles/fitness.dir/user.c.o src/CMakeFiles/fitness.dir/workoutrecommendations.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0
   OBJECT_DIR = src/CMakeFiles/fitness.dir
   POST_BUILD = :
@@ -162,9 +162,400 @@ build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/celina/Documents/GitHub/fitness/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_load_user
+
+
+#############################################
+# Order-only phony target for test_load_user
+
+build cmake_object_order_depends_target_test_load_user: phony || .
+
+build test/CMakeFiles/test_load_user.dir/test_load_user.c.o: C_COMPILER__test_load_user_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/test_load_user.c || cmake_object_order_depends_target_test_load_user
+  DEP_FILE = test/CMakeFiles/test_load_user.dir/test_load_user.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_load_user.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_load_user.dir
+
+build test/CMakeFiles/test_load_user.dir/user.c.o: C_COMPILER__test_load_user_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/user.c || cmake_object_order_depends_target_test_load_user
+  DEP_FILE = test/CMakeFiles/test_load_user.dir/user.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_load_user.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_load_user.dir
+
+build test/CMakeFiles/test_load_user.dir/workoutrecommendations.c.o: C_COMPILER__test_load_user_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/workoutrecommendations.c || cmake_object_order_depends_target_test_load_user
+  DEP_FILE = test/CMakeFiles/test_load_user.dir/workoutrecommendations.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_load_user.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_load_user.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_load_user
+
+
+#############################################
+# Link the executable test/test_load_user
+
+build test/test_load_user: C_EXECUTABLE_LINKER__test_load_user_Debug test/CMakeFiles/test_load_user.dir/test_load_user.c.o test/CMakeFiles/test_load_user.dir/user.c.o test/CMakeFiles/test_load_user.dir/workoutrecommendations.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0
+  OBJECT_DIR = test/CMakeFiles/test_load_user.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test/test_load_user
+  TARGET_PDB = test_load_user.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_save_user
+
+
+#############################################
+# Order-only phony target for test_save_user
+
+build cmake_object_order_depends_target_test_save_user: phony || .
+
+build test/CMakeFiles/test_save_user.dir/test_save_user.c.o: C_COMPILER__test_save_user_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/test_save_user.c || cmake_object_order_depends_target_test_save_user
+  DEP_FILE = test/CMakeFiles/test_save_user.dir/test_save_user.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_save_user.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_save_user.dir
+
+build test/CMakeFiles/test_save_user.dir/user.c.o: C_COMPILER__test_save_user_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/user.c || cmake_object_order_depends_target_test_save_user
+  DEP_FILE = test/CMakeFiles/test_save_user.dir/user.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_save_user.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_save_user.dir
+
+build test/CMakeFiles/test_save_user.dir/workoutrecommendations.c.o: C_COMPILER__test_save_user_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/workoutrecommendations.c || cmake_object_order_depends_target_test_save_user
+  DEP_FILE = test/CMakeFiles/test_save_user.dir/workoutrecommendations.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_save_user.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_save_user.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_save_user
+
+
+#############################################
+# Link the executable test/test_save_user
+
+build test/test_save_user: C_EXECUTABLE_LINKER__test_save_user_Debug test/CMakeFiles/test_save_user.dir/test_save_user.c.o test/CMakeFiles/test_save_user.dir/user.c.o test/CMakeFiles/test_save_user.dir/workoutrecommendations.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0
+  OBJECT_DIR = test/CMakeFiles/test_save_user.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test/test_save_user
+  TARGET_PDB = test_save_user.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_returning_user
+
+
+#############################################
+# Order-only phony target for test_returning_user
+
+build cmake_object_order_depends_target_test_returning_user: phony || .
+
+build test/CMakeFiles/test_returning_user.dir/test_returning_user.c.o: C_COMPILER__test_returning_user_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/test_returning_user.c || cmake_object_order_depends_target_test_returning_user
+  DEP_FILE = test/CMakeFiles/test_returning_user.dir/test_returning_user.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_returning_user.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_returning_user.dir
+
+build test/CMakeFiles/test_returning_user.dir/user.c.o: C_COMPILER__test_returning_user_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/user.c || cmake_object_order_depends_target_test_returning_user
+  DEP_FILE = test/CMakeFiles/test_returning_user.dir/user.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_returning_user.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_returning_user.dir
+
+build test/CMakeFiles/test_returning_user.dir/workoutrecommendations.c.o: C_COMPILER__test_returning_user_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/workoutrecommendations.c || cmake_object_order_depends_target_test_returning_user
+  DEP_FILE = test/CMakeFiles/test_returning_user.dir/workoutrecommendations.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_returning_user.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_returning_user.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_returning_user
+
+
+#############################################
+# Link the executable test/test_returning_user
+
+build test/test_returning_user: C_EXECUTABLE_LINKER__test_returning_user_Debug test/CMakeFiles/test_returning_user.dir/test_returning_user.c.o test/CMakeFiles/test_returning_user.dir/user.c.o test/CMakeFiles/test_returning_user.dir/workoutrecommendations.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0
+  OBJECT_DIR = test/CMakeFiles/test_returning_user.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test/test_returning_user
+  TARGET_PDB = test_returning_user.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_update_user_files
+
+
+#############################################
+# Order-only phony target for test_update_user_files
+
+build cmake_object_order_depends_target_test_update_user_files: phony || .
+
+build test/CMakeFiles/test_update_user_files.dir/test_update_user_files.c.o: C_COMPILER__test_update_user_files_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/test_update_user_files.c || cmake_object_order_depends_target_test_update_user_files
+  DEP_FILE = test/CMakeFiles/test_update_user_files.dir/test_update_user_files.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_update_user_files.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_update_user_files.dir
+
+build test/CMakeFiles/test_update_user_files.dir/user.c.o: C_COMPILER__test_update_user_files_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/user.c || cmake_object_order_depends_target_test_update_user_files
+  DEP_FILE = test/CMakeFiles/test_update_user_files.dir/user.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_update_user_files.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_update_user_files.dir
+
+build test/CMakeFiles/test_update_user_files.dir/workoutrecommendations.c.o: C_COMPILER__test_update_user_files_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/workoutrecommendations.c || cmake_object_order_depends_target_test_update_user_files
+  DEP_FILE = test/CMakeFiles/test_update_user_files.dir/workoutrecommendations.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_update_user_files.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_update_user_files.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_update_user_files
+
+
+#############################################
+# Link the executable test/test_update_user_files
+
+build test/test_update_user_files: C_EXECUTABLE_LINKER__test_update_user_files_Debug test/CMakeFiles/test_update_user_files.dir/test_update_user_files.c.o test/CMakeFiles/test_update_user_files.dir/user.c.o test/CMakeFiles/test_update_user_files.dir/workoutrecommendations.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0
+  OBJECT_DIR = test/CMakeFiles/test_update_user_files.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test/test_update_user_files
+  TARGET_PDB = test_update_user_files.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_calculate_id
+
+
+#############################################
+# Order-only phony target for test_calculate_id
+
+build cmake_object_order_depends_target_test_calculate_id: phony || .
+
+build test/CMakeFiles/test_calculate_id.dir/user.c.o: C_COMPILER__test_calculate_id_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/user.c || cmake_object_order_depends_target_test_calculate_id
+  DEP_FILE = test/CMakeFiles/test_calculate_id.dir/user.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_calculate_id.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_calculate_id.dir
+
+build test/CMakeFiles/test_calculate_id.dir/workoutrecommendations.c.o: C_COMPILER__test_calculate_id_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/workoutrecommendations.c || cmake_object_order_depends_target_test_calculate_id
+  DEP_FILE = test/CMakeFiles/test_calculate_id.dir/workoutrecommendations.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_calculate_id.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_calculate_id.dir
+
+build test/CMakeFiles/test_calculate_id.dir/test_calculate_id.c.o: C_COMPILER__test_calculate_id_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/test_calculate_id.c || cmake_object_order_depends_target_test_calculate_id
+  DEP_FILE = test/CMakeFiles/test_calculate_id.dir/test_calculate_id.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_calculate_id.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_calculate_id.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_calculate_id
+
+
+#############################################
+# Link the executable test/test_calculate_id
+
+build test/test_calculate_id: C_EXECUTABLE_LINKER__test_calculate_id_Debug test/CMakeFiles/test_calculate_id.dir/user.c.o test/CMakeFiles/test_calculate_id.dir/workoutrecommendations.c.o test/CMakeFiles/test_calculate_id.dir/test_calculate_id.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0
+  OBJECT_DIR = test/CMakeFiles/test_calculate_id.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test/test_calculate_id
+  TARGET_PDB = test_calculate_id.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_display_recommendation
+
+
+#############################################
+# Order-only phony target for test_display_recommendation
+
+build cmake_object_order_depends_target_test_display_recommendation: phony || .
+
+build test/CMakeFiles/test_display_recommendation.dir/user.c.o: C_COMPILER__test_display_recommendation_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/user.c || cmake_object_order_depends_target_test_display_recommendation
+  DEP_FILE = test/CMakeFiles/test_display_recommendation.dir/user.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_display_recommendation.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_display_recommendation.dir
+
+build test/CMakeFiles/test_display_recommendation.dir/workoutrecommendations.c.o: C_COMPILER__test_display_recommendation_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/workoutrecommendations.c || cmake_object_order_depends_target_test_display_recommendation
+  DEP_FILE = test/CMakeFiles/test_display_recommendation.dir/workoutrecommendations.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_display_recommendation.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_display_recommendation.dir
+
+build test/CMakeFiles/test_display_recommendation.dir/test_display_recommendation.c.o: C_COMPILER__test_display_recommendation_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/test_display_recommendation.c || cmake_object_order_depends_target_test_display_recommendation
+  DEP_FILE = test/CMakeFiles/test_display_recommendation.dir/test_display_recommendation.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_display_recommendation.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_display_recommendation.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_display_recommendation
+
+
+#############################################
+# Link the executable test/test_display_recommendation
+
+build test/test_display_recommendation: C_EXECUTABLE_LINKER__test_display_recommendation_Debug test/CMakeFiles/test_display_recommendation.dir/user.c.o test/CMakeFiles/test_display_recommendation.dir/workoutrecommendations.c.o test/CMakeFiles/test_display_recommendation.dir/test_display_recommendation.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0
+  OBJECT_DIR = test/CMakeFiles/test_display_recommendation.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test/test_display_recommendation
+  TARGET_PDB = test_display_recommendation.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_adjust_recommendation
+
+
+#############################################
+# Order-only phony target for test_adjust_recommendation
+
+build cmake_object_order_depends_target_test_adjust_recommendation: phony || .
+
+build test/CMakeFiles/test_adjust_recommendation.dir/user.c.o: C_COMPILER__test_adjust_recommendation_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/user.c || cmake_object_order_depends_target_test_adjust_recommendation
+  DEP_FILE = test/CMakeFiles/test_adjust_recommendation.dir/user.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_adjust_recommendation.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_adjust_recommendation.dir
+
+build test/CMakeFiles/test_adjust_recommendation.dir/workoutrecommendations.c.o: C_COMPILER__test_adjust_recommendation_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/workoutrecommendations.c || cmake_object_order_depends_target_test_adjust_recommendation
+  DEP_FILE = test/CMakeFiles/test_adjust_recommendation.dir/workoutrecommendations.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_adjust_recommendation.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_adjust_recommendation.dir
+
+build test/CMakeFiles/test_adjust_recommendation.dir/test_adjust_recommendation.c.o: C_COMPILER__test_adjust_recommendation_unscanned_Debug /Users/celina/Documents/GitHub/fitness/test/test_adjust_recommendation.c || cmake_object_order_depends_target_test_adjust_recommendation
+  DEP_FILE = test/CMakeFiles/test_adjust_recommendation.dir/test_adjust_recommendation.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  INCLUDES = -I/Users/celina/Documents/GitHub/fitness/.
+  OBJECT_DIR = test/CMakeFiles/test_adjust_recommendation.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test_adjust_recommendation.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_adjust_recommendation
+
+
+#############################################
+# Link the executable test/test_adjust_recommendation
+
+build test/test_adjust_recommendation: C_EXECUTABLE_LINKER__test_adjust_recommendation_Debug test/CMakeFiles/test_adjust_recommendation.dir/user.c.o test/CMakeFiles/test_adjust_recommendation.dir/workoutrecommendations.c.o test/CMakeFiles/test_adjust_recommendation.dir/test_adjust_recommendation.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0
+  OBJECT_DIR = test/CMakeFiles/test_adjust_recommendation.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test/test_adjust_recommendation
+  TARGET_PDB = test_adjust_recommendation.dbg
+
+
+#############################################
+# Utility command for run_tests
+
+build test/run_tests: phony test/CMakeFiles/run_tests test/test_load_user
+
+
+#############################################
+# Utility command for test
+
+build test/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/test && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test/test: phony test/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/test && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build test/edit_cache: phony test/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/test && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/celina/Documents/GitHub/fitness -B/Users/celina/Documents/GitHub/fitness/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/rebuild_cache: phony test/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Custom command for test/CMakeFiles/run_tests
+
+build test/CMakeFiles/run_tests | ${cmake_ninja_workdir}test/CMakeFiles/run_tests: CUSTOM_COMMAND || test/test_load_user
+  COMMAND = cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/test && /Users/celina/Documents/GitHub/fitness/cmake-build-debug/test/test_load_user test_save_user test_returning_user test_update_user_files test_calculate_id test_display_recommendation test_adjust_recommendation
+
+# =============================================================================
 # Target aliases.
 
 build fitness: phony src/fitness
+
+build run_tests: phony test/run_tests
+
+build test_adjust_recommendation: phony test/test_adjust_recommendation
+
+build test_calculate_id: phony test/test_calculate_id
+
+build test_display_recommendation: phony test/test_display_recommendation
+
+build test_load_user: phony test/test_load_user
+
+build test_returning_user: phony test/test_returning_user
+
+build test_save_user: phony test/test_save_user
+
+build test_update_user_files: phony test/test_update_user_files
 
 # =============================================================================
 # Folder targets.
@@ -174,7 +565,7 @@ build fitness: phony src/fitness
 #############################################
 # Folder: /Users/celina/Documents/GitHub/fitness/cmake-build-debug
 
-build all: phony src/all
+build all: phony src/all test/all
 
 # =============================================================================
 
@@ -184,20 +575,27 @@ build all: phony src/all
 build src/all: phony src/fitness
 
 # =============================================================================
+
+#############################################
+# Folder: /Users/celina/Documents/GitHub/fitness/cmake-build-debug/test
+
+build test/all: phony test/test_load_user test/test_save_user test/test_returning_user test/test_update_user_files test/test_calculate_id test/test_display_recommendation test/test_adjust_recommendation
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Users/celina/Documents/GitHub/fitness/CMakeLists.txt /Users/celina/Documents/GitHub/fitness/src/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Users/celina/Documents/GitHub/fitness/CMakeLists.txt /Users/celina/Documents/GitHub/fitness/src/CMakeLists.txt /Users/celina/Documents/GitHub/fitness/test/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Users/celina/Documents/GitHub/fitness/CMakeLists.txt /Users/celina/Documents/GitHub/fitness/src/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /Users/celina/Documents/GitHub/fitness/CMakeLists.txt /Users/celina/Documents/GitHub/fitness/src/CMakeLists.txt /Users/celina/Documents/GitHub/fitness/test/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
 
 
 #############################################

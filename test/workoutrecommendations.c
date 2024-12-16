@@ -1,7 +1,7 @@
 #include "workoutrecommendations.h"
 #include "user.h"
 
-#include <assert.h>
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -197,7 +197,7 @@ int get_user_feedback() {
     printf("How was the last workout?\n");
     printf("1. Too hard\n2. Too easy\n3. Not effective\nEnter your feedback: ");
     int feedback;
-    scanf("%d", &feedback);
+    scanf("%d", &feedback) != 1 || (feedback != -1 && feedback != 1 && feedback != 0);
 
     if (feedback == 1) {
         return -1;
@@ -308,5 +308,4 @@ void update_user_file(const char *name, int recommendation_id) {
 
     printf("Successfully updated Recommendation ID for user %s to %d.\n", name, recommendation_id);
 }
-
 

@@ -174,7 +174,7 @@ user_t load_user(void) {
 
 // Function to save user details to a text file
 void save_user(user_t user) {
-    FILE *file = fopen("users.txt", "w"); // Open file in append mode
+    FILE *file = fopen("users.txt", "a"); // Open file in append mode
     if (file == NULL) {
         printf("Error: Could not open file to save data.\n");
         return;

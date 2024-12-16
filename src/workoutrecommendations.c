@@ -181,19 +181,23 @@ void display_recommendation(int recommendation_id) {
     }
 
     char line[256];
-    int current_id = 0;
+    int current_id;
     int is_in_recommendation = 0; // Boolean flag to indicate we're in the correct block
 
     while (fgets(line, sizeof(line), file)) {
         // Check if this line starts a new recommendation block
-        if (strncmp(line, "#ID", 3) > 0) {
-            current_id++;
-            // Check if this is the desired recommendation ID
-            if (current_id == recommendation_id) {
-                is_in_recommendation = 1; // Start printing lines from this block
-            } else if (is_in_recommendation) {
-                // We've reached a new block; stop printing
-                break;
+        if (strncmp(line, "#ID", 3) == 0) {
+            // Parse the ID from the line
+            if (sscanf(line, "#ID %d", &current_id) == 1) {
+                // Check if this is the desired recommendation ID
+                if (current_id == recommendation_id) {
+                    is_in_recommendation = 1; // Start printing lines from this block
+                } else if (is_in_recommendation) {
+                    // We've reached a new block; stop printing
+                    break;
+                } else {
+                    is_in_recommendation = 0; // Not the target ID
+                }
             }
         }
 
@@ -209,7 +213,6 @@ void display_recommendation(int recommendation_id) {
 
     fclose(file);
 }
-
 int adjust_recommendation(user_t *user, int feedback) {
     printf("Adjusting recommendation for user: %s\n", user->name);
     printf("Initial Recommendation ID: %d\n", user->recommendation_id);

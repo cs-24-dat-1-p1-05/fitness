@@ -1,31 +1,12 @@
 #include <stdio.h>
 #include <string.h>
-#include "user.h"
-
 #include <stdbool.h>
 #include <stdlib.h>
 
 #include "workoutrecommendations.h"
+#include "user.h"
 
 #define MAX_
-// Function to calculate BMI
-float calculate_bmi(int height, float weight) {
-    float height_in_meters = height / 100.0;
-    return weight / (height_in_meters * height_in_meters);
-}
-
-// Function to categorize BMI
-const char* calculate_bmi_category(float bmi) {
-    if (bmi < 18.5) return "Underweight";
-    if (bmi < 24.9) return "Normal weight";
-    if (bmi < 29.9) return "Overweight";
-    return "Obese";
-}
-
-// Function to calculate Waist-to-Hip Ratio (WHR)
-float calculate_whr(int waist, int hip) {
-    return (float)waist / hip;
-}
 
 // Function to print user details
 void print_user(user_t user) {
@@ -39,7 +20,6 @@ void print_user(user_t user) {
     printf("Location: %d\n", user.location);
     printf("Preferences: %d\n", user.preferences);
     printf("Exercise Purpose: %s\n", user.exercise_purpose);
-    printf("Exercise Days per Week: %d\n", user.exercise_days_per_week);
 
     // Calculate and print BMI and category
     printf("Fitness Assessment (BMI): %.2f\n", user.fitness_assessment_bmi);
@@ -136,7 +116,7 @@ user_t load_user(void) {
 
     // Switch for Exercise Purpose
     printf("Please select your exercise purpose:\n");
-    printf("1. Weight Loss\n2. Muscle Gain\n3. Enhance cardio\n4. General Health\n\n");
+    printf("1. Weight Loss\n2. Muscle Gain\n3. Improve Cardio\n4. General Health\n\n");
     int exercise_purpose_choice;
     scanf("%d", &exercise_purpose_choice);
     switch (exercise_purpose_choice) {
@@ -157,9 +137,6 @@ user_t load_user(void) {
             printf("Invalid choice, defaulting to General Health.\n");
             break;
     }
-
-    printf("Please enter how many days you exercise per week:\n");
-    scanf("%d", &new_user.exercise_days_per_week);
 
     // Calculate BMI and WHR
     new_user.fitness_assessment_bmi = calculate_bmi(new_user.height, new_user.weight);
@@ -191,7 +168,6 @@ void save_user(user_t user) {
     fprintf(file, "Location: %d\n", user.location);
     fprintf(file, "Preferences: %d\n", user.preferences);
     fprintf(file, "Exercise Purpose: %s\n", user.exercise_purpose);
-    fprintf(file, "Exercise Days per Week: %d\n", user.exercise_days_per_week);
     fprintf(file, "Fitness Assessment (BMI): %.2f\n", user.fitness_assessment_bmi);
     fprintf(file, "BMI Category: %s\n", calculate_bmi_category(user.fitness_assessment_bmi));
     fprintf(file, "Fitness Assessment (WHR): %.2f\n", user.fitness_assessment_whr);
@@ -219,6 +195,25 @@ void save_user(user_t user) {
     fclose(file);  // Close the file
 }
 
+// Function to calculate BMI
+float calculate_bmi(int height, float weight) {
+    float height_in_meters = height / 100.0;
+    return weight / (height_in_meters * height_in_meters);
+}
+
+// Function to categorize BMI
+const char* calculate_bmi_category(float bmi) {
+    if (bmi < 18.5) return "Underweight";
+    if (bmi < 24.9) return "Normal weight";
+    if (bmi < 29.9) return "Overweight";
+    return "Obese";
+}
+
+// Function to calculate Waist-to-Hip Ratio (WHR)
+float calculate_whr(int waist, int hip) {
+    return (float)waist / hip;
+}
+
 // Function to remove trailing newline or spaces
 void strip_newline_and_spaces(char *str) {
     // Remove trailing newline, if any
@@ -231,12 +226,14 @@ void strip_newline_and_spaces(char *str) {
         len--;
     }
 }
+
 void trim_newline(char *str) {
     char *pos;
     if ((pos = strchr(str, '\n')) != NULL) {
         *pos = '\0';
     }
 }
+
 // Function to handle returning user logic
 user_t returning_user(const char *name) {
     FILE *file = fopen("users.txt", "r");
@@ -284,7 +281,6 @@ user_t returning_user(const char *name) {
                     if (sscanf(line, "Location: %d", &user.location) == 1) continue;
                     if (sscanf(line, "Preferences: %d", &user.preferences) == 1) continue;
                     if (sscanf(line, "Exercise Purpose: %49[^\n]", user.exercise_purpose) == 1) continue;
-                    if (sscanf(line, "Exercise Days per Week: %d", &user.exercise_days_per_week) == 1) continue;
                     if (sscanf(line, "Fitness Assessment (BMI): %f", &user.fitness_assessment_bmi) == 1) continue;
                     if (sscanf(line, "Fitness Assessment (WHR): %f", &user.fitness_assessment_whr) == 1) continue;
                     if (sscanf(line, "Recommendation ID: %d", &user.recommendation_id) == 1) continue;
@@ -305,39 +301,66 @@ user_t returning_user(const char *name) {
 
     return user;
 }
-void display_recommendation(int recommendation_id) {
-    FILE *file = fopen("recommendations.txt", "r");
+
+void update_user_file(const char *name, int recommendation_id) {
+    FILE *file = fopen("users.txt", "r");
     if (!file) {
-        printf("Error opening recommendations file.\n");
-        return;
+        perror("Error opening users.txt for reading");
+        exit(EXIT_FAILURE);
     }
 
-    char line[256];
-    int current_id = recommendation_id;
-    int is_in_recommendation = 0; // Boolean flag to indicate we're in the correct block
-
-    while (fgets(line, sizeof(line), file)) {
-        // Check if this line starts a new recommendation block
-        if (strncmp(line, "#ID", 3) > 0) {
-            current_id++;
-            // Check if this is the desired recommendation ID
-            if (current_id == recommendation_id) {
-                is_in_recommendation = 1; // Start printing lines from this block
-            } else if (is_in_recommendation) {
-                // We've reached a new block; stop printing
-                break;
-            }
-        }
-
-        // Print lines if we are inside the desired recommendation block
-        if (is_in_recommendation) {
-            printf("%s", line);
-        }
+    FILE *temp_file = fopen("users_temp.txt", "w");
+    if (!temp_file) {
+        perror("Error opening temporary file for writing");
+        fclose(file);
+        exit(EXIT_FAILURE);
     }
 
-    if (!is_in_recommendation) {
-        printf("No recommendation found with ID %d\n", recommendation_id);
+    char buffer[MAX_LINE_LENGTH];
+    char current_user[100] = "";
+    int is_target_user = 0;
+    int recommendation_updated = 0;
+
+    printf("Starting update for user: %s\n", name);
+    printf("Target Recommendation ID: %d\n", recommendation_id);
+
+    // Process each line
+    while (fgets(buffer, sizeof(buffer), file)) {
+        printf("Processing line: %s", buffer);
+
+        // Detect user block by name
+        if (strncmp(buffer, "Name:", 5) == 0) {
+            sscanf(buffer, "Name: %99[^\n]", current_user);
+            is_target_user = (strcmp(current_user, name) == 0);
+            printf("Current user: %s (Is target: %d)\n", current_user, is_target_user);
+        }
+
+        // Update "Recommendation ID" for the target user
+        if (is_target_user && strncmp(buffer, "Recommendation ID:", 18) == 0) {
+            printf("Found Recommendation ID for user %s: %s", name, buffer);
+            snprintf(buffer, sizeof(buffer), "Recommendation ID: %d\n", recommendation_id);
+            recommendation_updated = 1;
+            printf("Updated line: %s", buffer);
+        }
+
+        // Write the current line to the temp file
+        fputs(buffer, temp_file);
+    }
+
+    // If the target user was processed but no Recommendation ID found, add it
+    if (is_target_user && !recommendation_updated) {
+        printf("No Recommendation ID found for user %s. Adding new Recommendation ID: %d\n", name, recommendation_id);
+        fprintf(temp_file, "Recommendation ID: %d\n", recommendation_id);
     }
 
     fclose(file);
+    fclose(temp_file);
+
+    // Replace the original file with the updated one
+    if (rename("users_temp.txt", "users.txt") != 0) {
+        perror("Error replacing users.txt with updated file");
+        exit(EXIT_FAILURE);
+    }
+
+    printf("Successfully updated Recommendation ID for user %s to %d.\n", name, recommendation_id);
 }

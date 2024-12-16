@@ -13,5 +13,39 @@ Fitness Assessment (BMI): 23.62
 BMI Category: Normal weight
 Fitness Assessment (WHR): 0.86
 WHR Health Risk: High
-Recommendation ID: 7
+Recommendation ID: 0
+----------------------------
+Name: Frede
+Age: 23
+Gender: Female
+Height: 158 cm
+Weight: 58.000000 kg
+Hip: 80 cm
+Waist: 75 cm
+Location: 1
+Preferences: 4
+Exercise Purpose: General Health
+Exercise Days per Week: 3
+Fitness Assessment (BMI): 23.23
+BMI Category: Normal weight
+Fitness Assessment (WHR): 0.94
+WHR Health Risk: High
+Recommendation ID: 0
+----------------------------
+Name: Frede
+Age: 23
+Gender: Female
+Height: 158 cm
+Weight: 90.000000 kg
+Hip: 80 cm
+Waist: 90 cm
+Location: 1
+Preferences: 1
+Exercise Purpose: Weight Loss
+Exercise Days per Week: 3
+Fitness Assessment (BMI): 36.05
+BMI Category: Obese
+Fitness Assessment (WHR): 1.12
+WHR Health Risk: High
+Recommendation ID: 4
 ----------------------------

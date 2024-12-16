@@ -1,8 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-#include "workoutrecommendations.h"  // Include the header file for the recommendations
+#include "workoutrecommendations.h"  // Include the header files for the recommendations
 #include "user.h"
 
 

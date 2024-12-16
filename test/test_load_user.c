@@ -66,10 +66,6 @@ void test_load_user() {
         printf("Test failed: exercise purpose mismatch. Expected: Weight Loss, Got: %s\n", test_user.exercise_purpose);
         exit(EXIT_FAILURE);
     }
-    if (test_user.exercise_days_per_week != 5) {
-        printf("Test failed: exercise days mismatch. Expected: 5, Got: %d\n", test_user.exercise_days_per_week);
-        exit(EXIT_FAILURE);
-    }
 
     // Verify BMI, WHR, and other calculated values (assuming example calculations are available)
     float expected_bmi = calculate_bmi(180, 75.5);

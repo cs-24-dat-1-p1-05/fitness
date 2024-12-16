@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
-#include "user.h"
+#include "workoutrecommendations.h"
 
 void test_adjust_recommendation() {
-    user_t user1 = {"Alice", 0,0,0,0,0,0,0,0,"",0,0,0,0,3};
-    user_t user2 = {"Bob", 0,0,0,0,0,0,0,0,"",0,0,0,0,1};
-    user_t user3 = {"Charlie", 0,0,0,0,0,0,0,0,"",0,0,0,0,2};
+    user_t user1 = {"Alice", 0,0,0,0,0,0,0,0,"",0,0,0,3};
+    user_t user2 = {"Bob", 0,0,0,0,0,0,0,0,"",0,0,0,1};
+    user_t user3 = {"Charlie", 0,0,0,0,0,0,0,0,"",0,0,0,2};
 
     // Test case 1: Feedback = -1 (Too hard), ID should decrease
     printf("test1");
@@ -27,12 +27,12 @@ void test_adjust_recommendation() {
     assert(adjust_recommendation(&user3, 0) == 4);
     // Test case 6: Feedback = 0 (Not effective), Odd ID, switch to even ID
     printf("test6");
-    user_t user4 = {"David", 0,0,0,0,0,0,0,0,"",0,0,0,0,3};
+    user_t user4 = {"David", 0,0,0,0,0,0,0,0,"",0,0,0,3};
     assert(adjust_recommendation(&user4, 0) == 4);
 
     // Test case 7: Test ID cannot go below 1 (feedback=0 and already at minimum)
     printf("test7");
-    user_t user5 = {"Eve", 0,0,0,0,0,0,0,0,"",0,0,0,0,1};
+    user_t user5 = {"Eve", 0,0,0,0,0,0,0,0,"",0,0,0,1};
     assert(adjust_recommendation(&user5, 0) == 2);
 
     printf("All tests passed!\n");

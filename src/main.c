@@ -58,7 +58,7 @@ int main() {
                 }
                 adjust_recommendation(&existing_user, feedback);
 
-                update_user_file(&existing_user, new_recommendation_id);
+                update_user_file(&existing_user, user.recommendation_id);
                 // Optionally display updated recommendation
                 printf("\nWould you like to view the updated recommendation? (1 for Yes, 2 for No): ");
                 int choice;

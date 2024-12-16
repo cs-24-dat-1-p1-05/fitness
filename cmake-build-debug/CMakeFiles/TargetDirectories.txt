@@ -1,0 +1,7 @@
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles/test.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/src/CMakeFiles/fitness.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/src/CMakeFiles/test.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+/Users/celina/Documents/GitHub/fitness/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir

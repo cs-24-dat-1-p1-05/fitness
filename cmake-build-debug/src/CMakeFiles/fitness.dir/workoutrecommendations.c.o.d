@@ -1,7 +1,5 @@
 src/CMakeFiles/fitness.dir/workoutrecommendations.c.o: \
   /Users/frederikke/Documents/GitHub/fitness/src/workoutrecommendations.c \
-  /Users/frederikke/Documents/GitHub/fitness/src/workoutrecommendations.h \
-  /Users/frederikke/Documents/GitHub/fitness/src/user.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/cdefs.h \
@@ -91,4 +89,6 @@ src/CMakeFiles/fitness.dir/workoutrecommendations.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_errno_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/secure/_strings.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/secure/_string.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/secure/_string.h \
+  /Users/frederikke/Documents/GitHub/fitness/src/workoutrecommendations.h \
+  /Users/frederikke/Documents/GitHub/fitness/src/user.h

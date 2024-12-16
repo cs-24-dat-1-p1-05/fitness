@@ -44,7 +44,6 @@ src/CMakeFiles/fitness.dir/user.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/secure/_string.h \
-  /Users/frederikke/Documents/GitHub/fitness/src/user.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdbool.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_stdlib.h \
@@ -92,4 +91,5 @@ src/CMakeFiles/fitness.dir/user.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_abort.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_dev_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_mode_t.h \
-  /Users/frederikke/Documents/GitHub/fitness/src/workoutrecommendations.h
+  /Users/frederikke/Documents/GitHub/fitness/src/workoutrecommendations.h \
+  /Users/frederikke/Documents/GitHub/fitness/src/user.h

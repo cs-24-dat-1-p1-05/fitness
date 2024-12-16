@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-#include "workoutrecommendations.h"  // Include the header files for the recommendations
+#include "workoutrecommendations.h"  // Include the header files
 #include "user.h"
 
 
-int new_recommendation_id;
 
 int main() {
+
     int user_choice;
 
     // Infinite loop until user chooses to exit
@@ -49,16 +49,10 @@ int main() {
 
                 // Handle user feedback and potentially adjust recommendations
                 int feedback = get_user_feedback();
-                if (feedback == -1) {
-                    printf("Feedback noted: Last workout was too hard. Adjusting recommendations...\n");
-                } else if (feedback == 1) {
-                    printf("Feedback noted: Last workout was too easy. Adjusting recommendations...\n");
-                } else {
-                    printf("Feedback noted: Last workout was not effective. Adjusting recommendations...\n");
-                }
+
                 adjust_recommendation(&existing_user, feedback);
 
-                update_user_file(&existing_user, new_recommendation_id);
+                update_user_file(name, existing_user.recommendation_id);
                 // Optionally display updated recommendation
                 printf("\nWould you like to view the updated recommendation? (1 for Yes, 2 for No): ");
                 int choice;

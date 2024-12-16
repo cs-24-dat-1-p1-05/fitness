@@ -144,8 +144,6 @@ user_t load_user(void) {
     new_user.fitness_level = calculate_fitness_level(new_user);
     new_user.recommendation_id = calculate_id(new_user);
 
-    new_user.feedback = 0;
-
     return new_user;
 }
 
@@ -268,10 +266,10 @@ user_t returning_user(const char *name) {
 
                     if (sscanf(line, "Age: %d", &user.age) == 1) continue;
                     if (strstr(line, "Gender: ") && strstr(line, "Female")) {
-                        user.gender = 0;  // Assuming Female = 0
+                        user.gender = 0;
                         continue;
                     } else if (strstr(line, "Gender: ") && strstr(line, "Male")) {
-                        user.gender = 1;  // Assuming Male = 1
+                        user.gender = 1;
                         continue;
                     }
                     if (sscanf(line, "Height: %d cm", &user.height) == 1) continue;
@@ -321,26 +319,26 @@ void update_user_file(const char *name, int recommendation_id) {
     int is_target_user = 0;
     int recommendation_updated = 0;
 
-    printf("Starting update for user: %s\n", name);
-    printf("Target Recommendation ID: %d\n", recommendation_id);
+    printf("Adjusting recommendations for user: %s\n", name);
+    // printf("Target Recommendation ID: %d\n", recommendation_id);
 
     // Process each line
     while (fgets(buffer, sizeof(buffer), file)) {
-        printf("Processing line: %s", buffer);
+        //printf("Processing line: %s", buffer);
 
         // Detect user block by name
         if (strncmp(buffer, "Name:", 5) == 0) {
             sscanf(buffer, "Name: %99[^\n]", current_user);
             is_target_user = (strcmp(current_user, name) == 0);
-            printf("Current user: %s (Is target: %d)\n", current_user, is_target_user);
+            //printf("Current user: %s (Is target: %d)\n", current_user, is_target_user);
         }
 
         // Update "Recommendation ID" for the target user
         if (is_target_user && strncmp(buffer, "Recommendation ID:", 18) == 0) {
-            printf("Found Recommendation ID for user %s: %s", name, buffer);
+            //printf("Found Recommendation ID for user %s: %s", name, buffer);
             snprintf(buffer, sizeof(buffer), "Recommendation ID: %d\n", recommendation_id);
             recommendation_updated = 1;
-            printf("Updated line: %s", buffer);
+            //printf("Updated line: %s", buffer);
         }
 
         // Write the current line to the temp file
@@ -362,5 +360,5 @@ void update_user_file(const char *name, int recommendation_id) {
         exit(EXIT_FAILURE);
     }
 
-    printf("Successfully updated Recommendation ID for user %s to %d.\n", name, recommendation_id);
+    //printf("Successfully updated Recommendation ID for user %s to %d.\n", name, recommendation_id);
 }

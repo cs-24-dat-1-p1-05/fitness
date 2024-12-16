@@ -19,10 +19,6 @@ typedef struct {
     float fitness_assessment_whr;
     int fitness_level;
     int recommendation_id;
-    int feedback;
-    int new_recommendation_id;
-    const char * adjust_recommendation;
-    int update_user_file;
 } user_t;
 
 // Function declarations

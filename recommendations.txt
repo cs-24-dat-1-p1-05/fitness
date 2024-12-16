@@ -1,5 +1,5 @@
 Weight Loss
-#ID Weight Loss program 1:
+#ID 1 Weight Loss program:
                Day 1: 30 minutters konditionstraening
                Day 2: Hvile
                Day 3: Full body (i fitness center)
@@ -8,15 +8,7 @@ Weight Loss
                Day 6: Hvile
                Day 7: Yoga
 
-#ID Weight Loss program 2:
-               Day 1: 30 minutters konditionstraening
-               Day 2: Hvile
-               Day 3: Full body (i fitness center)
-               Day 4: Hvile
-               Day 5: Full body (Hjemme)
-               Day 6: Hvile
-               Day 7: Yoga
-#ID Weight Loss Program 3:
+#ID 2 Weight Loss program:
                Day 1: 30 minutters konditionstraening
                Day 2: Hvile
                Day 3: Full body (i fitness center)
@@ -25,8 +17,15 @@ Weight Loss
                Day 6: Hvile
                Day 7: Yoga
 
-Muscle Gain
-#ID German Volume Training 1:
+#ID 3 Weight Loss program:
+               Day 1: 30 minutters konditionstraening
+               Day 2: Hvile
+               Day 3: Full body (i fitness center)
+               Day 4: Hvile
+               Day 5: Full body (Hjemme)
+               Day 6: Hvile
+               Day 7: Yoga
+#ID 4 Muscle Gain program:
                Dag 1: Bryst og Ryg
                exercise 1: Decline Dumbbell Presses 10x10
                exercise 2: Chin-Ups 10x10
@@ -45,7 +44,7 @@ Muscle Gain
                exercise 4:Seated DumbbellLateral Raises 3x10
                Dag 5: Hvile
 
-#ID German Volume Training 2:
+#ID 5 Muscle Gain program:
                Day 1: Arms and Chest
                exercise 1: 10x3 Push Ups
                exercise 2: 10x3 Tricep Dips
@@ -60,7 +59,7 @@ Muscle Gain
                exercise 1: 2 min Plank, rest for 1 min. repeat 4 times
                exercise 2: 10x3 Sit Ups
 
-#ID German Volume Training 3:
+#ID 6 Muscle Gain program:
                Dag 1: Bryst og Ryg
                exercise 1: Decline Dumbbell Presses 10x10
                exercise 2: Chin-Ups 10x10
@@ -79,7 +78,7 @@ Muscle Gain
                exercise 4:Seated DumbbellLateral Raises 3x10
                Dag 5: Hvile
 
-#ID German Volume Training 4:
+#ID 7 Muscle Gain program:
                Day 1: Arms and Chest
                exercise 1: 10x3 Push Ups
                exercise 2: 10x3 Tricep Dips
@@ -94,9 +93,7 @@ Muscle Gain
                exercise 1: 2 min Plank, rest for 1 min. repeat 4 times
                exercise 2: 10x3 Sit Ups
 
-
-better cardio
-#ID Circle Training 1:
+#ID 8 Improve Cardio program:
                Stomach and upper legs:
                exercise 1: Frog
                Core and arms:
@@ -114,7 +111,7 @@ better cardio
                Stomach:
                exercise 1: Planke & atomic sit-up
 
-#ID Running 1:
+#ID 9 Improve Cardio program:
                Day 1: running
                exercise 1: run 4 min, walk 1 min. repeat 3 times
                Day 2: Rest
@@ -124,7 +121,7 @@ better cardio
                Day 5: Running
                exercise 1: run 4 min, walk 1 min. repeat 3 times
 
-#ID Circle Training 2:
+#ID 10 Improve Cardio program:
                Stomach and upper legs:
                exercise 1: Frog
                Core and arms:
@@ -142,7 +139,7 @@ better cardio
                Stomach:
                exercise 1: Planke & atomic sit-up
 
-#ID Running 2:
+#ID 11 Improve Cardio program:
                Day 1: running 
                exercise 1: run 4 min, walk 1 min. repeat 3 times 
                Day 2: Rest
@@ -152,7 +149,19 @@ better cardio
                Day 5: Running 
                exercise 1: run 4 min, walk 1 min. repeat 3 times 
 
+#ID 12 maintain fitness level
+               "Keep up what you are doing right now"
 
-maintain fitness level
-#ID maintain fitness level
-               "Keep up what you are doing right now
+#ID 13 program 13
+#ID 14 program 14
+#ID 15 program 15
+#ID 16 program 16
+#ID 17 program 17
+#ID 18 program 18
+#ID 19 program 19
+#ID 20 program 20
+#ID 21 program 21
+#ID 22 program 22
+#ID 23 program 23
+#ID 24 program 24
+#ID 25 program 25

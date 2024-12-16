@@ -132,9 +132,8 @@ int calculate_id(user_t user) {
     }
 
 
-    // Basing id on fitness_level and the given feedback
+    // Basing id on fitness_level
     id += user.fitness_level - 1;
-    id += user.feedback;
 
     return id;
 }
@@ -166,10 +165,13 @@ int get_user_feedback() {
     scanf("%d", &feedback);
 
     if (feedback == 1) {
+        printf("Feedback noted: Last workout was too hard. Finding more suitable recommendations...\n");
         return -1;
     } if (feedback == 2) {
+        printf("Feedback noted: Last workout was too easy. Finding more suitable recommendations...\n");
         return 1;
     }
+    printf("Feedback noted: Last workout was not effective. Finding similar recommendations...\n");
     return 0;
 }
 
@@ -186,15 +188,20 @@ void display_recommendation(int recommendation_id) {
 
     while (fgets(line, sizeof(line), file)) {
         // Check if this line starts a new recommendation block
-        if (strncmp(line, "#ID", 3) > 0) {
-            current_id++;
+        if (strncmp(line, "#ID", 3) == 0) {
+            // Parse the ID from the line
+            sscanf(line, "#ID %d", &current_id);
+
             // Check if this is the desired recommendation ID
             if (current_id == recommendation_id) {
                 is_in_recommendation = 1; // Start printing lines from this block
             } else if (is_in_recommendation) {
-                // We've reached a new block; stop printing
+                // Reached a new block; stop printing
                 break;
+            } else {
+                is_in_recommendation = 0; // Ensure we don't print from other blocks
             }
+            continue; // Move to the next line
         }
 
         // Print lines if we are inside the desired recommendation block
@@ -210,9 +217,10 @@ void display_recommendation(int recommendation_id) {
     fclose(file);
 }
 
+
 int adjust_recommendation(user_t *user, int feedback) {
-    printf("Adjusting recommendation for user: %s\n", user->name);
-    printf("Initial Recommendation ID: %d\n", user->recommendation_id);
+    // printf("Adjusting recommendation for user: %s\n", user->name);
+    //printf("Initial recommendation ID: %d\n", user->recommendation_id);
 
     if (feedback == -1) { // Too hard
         if (user->recommendation_id > 1) {
@@ -235,7 +243,7 @@ int adjust_recommendation(user_t *user, int feedback) {
         user->recommendation_id = 1;
     }
 
-    printf("Final Recommendation ID: %d\n", user->recommendation_id);
+    //printf("New recommendation ID: %d\n", user->recommendation_id);
     return user->recommendation_id;
 }
 

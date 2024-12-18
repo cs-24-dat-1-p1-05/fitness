@@ -139,6 +139,149 @@ fitness/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/build
 .PHONY : fitness/fast
 
+#=============================================================================
+# Target rules for targets named recommendation
+
+# Build rule for target.
+recommendation: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 recommendation
+.PHONY : recommendation
+
+# fast build rule for target.
+recommendation/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/build
+.PHONY : recommendation/fast
+
+#=============================================================================
+# Target rules for targets named test_load_user
+
+# Build rule for target.
+test_load_user: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_load_user
+.PHONY : test_load_user
+
+# fast build rule for target.
+test_load_user/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_load_user.dir/build.make test/CMakeFiles/test_load_user.dir/build
+.PHONY : test_load_user/fast
+
+#=============================================================================
+# Target rules for targets named test_save_user
+
+# Build rule for target.
+test_save_user: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_save_user
+.PHONY : test_save_user
+
+# fast build rule for target.
+test_save_user/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_save_user.dir/build.make test/CMakeFiles/test_save_user.dir/build
+.PHONY : test_save_user/fast
+
+#=============================================================================
+# Target rules for targets named test_returning_user
+
+# Build rule for target.
+test_returning_user: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_returning_user
+.PHONY : test_returning_user
+
+# fast build rule for target.
+test_returning_user/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_returning_user.dir/build.make test/CMakeFiles/test_returning_user.dir/build
+.PHONY : test_returning_user/fast
+
+#=============================================================================
+# Target rules for targets named test_update_user_files
+
+# Build rule for target.
+test_update_user_files: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_update_user_files
+.PHONY : test_update_user_files
+
+# fast build rule for target.
+test_update_user_files/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_update_user_files.dir/build.make test/CMakeFiles/test_update_user_files.dir/build
+.PHONY : test_update_user_files/fast
+
+#=============================================================================
+# Target rules for targets named test_calculate_id
+
+# Build rule for target.
+test_calculate_id: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_calculate_id
+.PHONY : test_calculate_id
+
+# fast build rule for target.
+test_calculate_id/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_calculate_id.dir/build.make test/CMakeFiles/test_calculate_id.dir/build
+.PHONY : test_calculate_id/fast
+
+#=============================================================================
+# Target rules for targets named test_display_recommendation
+
+# Build rule for target.
+test_display_recommendation: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_display_recommendation
+.PHONY : test_display_recommendation
+
+# fast build rule for target.
+test_display_recommendation/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_display_recommendation.dir/build.make test/CMakeFiles/test_display_recommendation.dir/build
+.PHONY : test_display_recommendation/fast
+
+#=============================================================================
+# Target rules for targets named test_adjust_recommendation
+
+# Build rule for target.
+test_adjust_recommendation: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_adjust_recommendation
+.PHONY : test_adjust_recommendation
+
+# fast build rule for target.
+test_adjust_recommendation/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_adjust_recommendation.dir/build.make test/CMakeFiles/test_adjust_recommendation.dir/build
+.PHONY : test_adjust_recommendation/fast
+
+#=============================================================================
+# Target rules for targets named test_2
+
+# Build rule for target.
+test_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_2
+.PHONY : test_2
+
+# fast build rule for target.
+test_2/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_2.dir/build.make test/CMakeFiles/test_2.dir/build
+.PHONY : test_2/fast
+
+#=============================================================================
+# Target rules for targets named run_tests
+
+# Build rule for target.
+run_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_tests
+.PHONY : run_tests
+
+# fast build rule for target.
+run_tests/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests.dir/build.make test/CMakeFiles/run_tests.dir/build
+.PHONY : run_tests/fast
+
+#=============================================================================
+# Target rules for targets named final_test
+
+# Build rule for target.
+final_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 final_test
+.PHONY : final_test
+
+# fast build rule for target.
+final_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/final_test.dir/build.make test/CMakeFiles/final_test.dir/build
+.PHONY : final_test/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -148,7 +291,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... final_test"
+	@echo "... run_tests"
 	@echo "... fitness"
+	@echo "... recommendation"
+	@echo "... test_2"
+	@echo "... test_adjust_recommendation"
+	@echo "... test_calculate_id"
+	@echo "... test_display_recommendation"
+	@echo "... test_load_user"
+	@echo "... test_returning_user"
+	@echo "... test_save_user"
+	@echo "... test_update_user_files"
 .PHONY : help
 
 

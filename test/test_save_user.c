@@ -16,7 +16,6 @@ void test_save_user() {
         .waist = 80,
         .location = 2,
         .preferences = 3,
-        .exercise_days_per_week = 5,
     };
     strcpy(test_user.exercise_purpose, "Weight Loss");
     test_user.fitness_assessment_bmi = calculate_bmi(test_user.height, test_user.weight);

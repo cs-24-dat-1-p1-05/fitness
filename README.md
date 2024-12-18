@@ -1,1 +1,2 @@
-# fitness
+# Personalized Fitness Trainer
+

@@ -320,25 +320,20 @@ void update_user_file(const char *name, int recommendation_id) {
     int recommendation_updated = 0;
 
     printf("Adjusting recommendations for user: %s\n", name);
-    // printf("Target Recommendation ID: %d\n", recommendation_id);
 
     // Process each line
     while (fgets(buffer, sizeof(buffer), file)) {
-        //printf("Processing line: %s", buffer);
 
         // Detect user block by name
         if (strncmp(buffer, "Name:", 5) == 0) {
             sscanf(buffer, "Name: %99[^\n]", current_user);
             is_target_user = (strcmp(current_user, name) == 0);
-            //printf("Current user: %s (Is target: %d)\n", current_user, is_target_user);
         }
 
         // Update "Recommendation ID" for the target user
         if (is_target_user && strncmp(buffer, "Recommendation ID:", 18) == 0) {
-            //printf("Found Recommendation ID for user %s: %s", name, buffer);
             snprintf(buffer, sizeof(buffer), "Recommendation ID: %d\n", recommendation_id);
             recommendation_updated = 1;
-            //printf("Updated line: %s", buffer);
         }
 
         // Write the current line to the temp file
@@ -359,6 +354,4 @@ void update_user_file(const char *name, int recommendation_id) {
         perror("Error replacing users.txt with updated file");
         exit(EXIT_FAILURE);
     }
-
-    //printf("Successfully updated Recommendation ID for user %s to %d.\n", name, recommendation_id);
 }

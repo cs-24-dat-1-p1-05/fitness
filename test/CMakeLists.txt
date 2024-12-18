@@ -18,6 +18,7 @@ target_link_libraries(test_update_user_files recommendation)
 target_link_libraries(test_calculate_id recommendation)
 target_link_libraries(test_display_recommendation recommendation)
 target_link_libraries(test_adjust_recommendation recommendation)
+target_link_libraries(test_2 recommendation)
 
 
 # Optionally, add a custom target for running tests

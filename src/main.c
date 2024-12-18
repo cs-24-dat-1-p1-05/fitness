@@ -1,17 +1,14 @@
 #include <stdio.h>
-
 #include "workoutrecommendations.h"  // Include the header files
 #include "user.h"
-
-
 
 int main() {
 
     int user_choice;
 
-    // Infinite loop until user chooses to exit
+    // Loop until user chooses Exit
     do {
-        // Display main menu options
+        // Display and prompt for user choice
         printf("Welcome to the Fitness Tracker!\n");
         printf("\nSelect an option:\n");
         printf("1. Create new user\n");
@@ -19,7 +16,7 @@ int main() {
         printf("3. Exit\n");
         printf("Enter your choice: ");
 
-        // Read user choice (needs to be correctly handled)
+        // Read user choice
         if (scanf("%d", &user_choice) != 1) {
             // Clear the input buffer in case of invalid input
             while(getchar() != '\n');
@@ -42,16 +39,16 @@ int main() {
             // Attempt to load the user data
             user_t existing_user = returning_user(name);
 
-
+            // Displaying initial recommendation
             if (existing_user.recommendation_id > 0) {
                 printf("Recommendation ID: %d\n", existing_user.recommendation_id);
                 display_recommendation(existing_user.recommendation_id);
 
                 // Handle user feedback and potentially adjust recommendations
                 int feedback = get_user_feedback();
-
                 adjust_recommendation(&existing_user, feedback);
 
+                // Updating user.txt file with the new recommendation id
                 update_user_file(name, existing_user.recommendation_id);
                 // Optionally display updated recommendation
                 printf("\nWould you like to view the updated recommendation? (1 for Yes, 2 for No): ");

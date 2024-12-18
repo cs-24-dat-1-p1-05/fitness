@@ -1,6 +1,3 @@
-//
-// Created by Celina Ottesen on 15/12/2024.
-//
 #include "workoutrecommendations.h"
 #include <stdio.h>
 #include "user.h"

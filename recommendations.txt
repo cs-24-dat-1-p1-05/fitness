@@ -1,167 +1,508 @@
-Weight Loss
-#ID 1 Weight Loss program:
-               Day 1: 30 minutters konditionstraening
-               Day 2: Hvile
-               Day 3: Full body (i fitness center)
-               Day 4: Hvile
-               Day 5: Full body (Hjemme)
-               Day 6: Hvile
-               Day 7: Yoga
+#ID 1 Weight Loss program: Run 2 km at a steady pace, rest for 2 minutes, repeat 3 times.
+#ID 2 Weight Loss program: Run 3 km at a moderate pace, include 2 sprints of 500m each.
+#ID 3 Weight Loss program: Interval training - 1 km sprint, 500m jog, repeat 4 times.
+#ID 4 Weight Loss program: Walk 4 km at a steady pace.
+#ID 5 Weight Loss program: Walk 5 km, alternating between fast and moderate paces every 5 minutes.
+#ID 6 Weight Loss program: Walk 6 km at a brisk pace, including 2 uphill segments if possible.
+#ID 7 Weight Loss program:
+                     Day 1: 30 minutes HIIT
+                     Day 2: Rest
+                     Day 3: Full body (Home)
+                     Day 4: Rest
+                     Day 5: Full body (Home)
+                     Day 6: Rest
+                     Day 7: Yoga
+#ID 8 Weight Loss program:
+                     Day 1: 30 minutes HIIT
+                     Day 2: Rest
+                     Day 3: Full body (Home)
+                     Day 4: Rest
+                     Day 5: Full body (Home)
+                     Day 6: Rest
+                     Day 7: Yoga
+#ID 9 Weight Loss program:
+                     Day 1: 30 minutes HIIT
+                     Day 2: Rest
+                     Day 3: Full body (Home)
+                     Day 4: Rest
+                     Day 5: Full body (Home)
+                     Day 6: Rest
+                     Day 7: Yoga
+#ID 10 Weight Loss program:
+                            Day 1: 30 minutes HIIT
+                            Day 2: Rest
+                            Day 3: Full body (Gym)
+                            Day 4: Rest
+                            Day 5: Full body (Gym)
+                            Day 6: Rest
+                            Day 7: Yoga
+#ID 11 Weight Loss program:
+                            Day 1: 30 minutes HIIT
+                            Day 2: Rest
+                            Day 3: Full body (Gym)
+                            Day 4: Rest
+                            Day 5: Full body (Gym)
+                            Day 6: Rest
+                            Day 7: Yoga
+#ID 12 Weight Loss program:
+                            Day 1: 30 minutes HIIT
+                            Day 2: Rest
+                            Day 3: Full body (Gym)
+                            Day 4: Rest
+                            Day 5: Full body (Gym)
+                            Day 6: Rest
+                            Day 7: Yoga
+#ID 13 Weight Loss program: Run 1 km at a steady pace, then bodyweight squats (3x10) and planks (3x20s). Repeat twice.
+#ID 14 Weight Loss program: Run 2 km at a moderate pace, then Bulgarian split squats (3x8) and incline push-ups (3x10).
+#ID 15 Weight Loss program: Interval sprints (4x500m), then pistol squats (3x8) and mountain climbers (3x30s).
+#ID 16 Weight Loss program: Run 1 km on a treadmill, then leg press (3x10) and dumbbell bench press (3x8). Repeat twice.
+#ID 17 Weight Loss program: Run 2 km on a treadmill, then deadlifts (3x10) and seated row (3x10).
+#ID 18 Weight Loss program: Run 3 km with sprints (4x500m), then squats (3x10) and pull-ups (3x8).
+#ID 19 Muscle Gain program: Run 2 km at a steady pace, focusing on building leg endurance, followed by cooldown stretches.
+#ID 20 Muscle Gain program: Run 3 km at a moderate pace with 3x400m sprints for increased intensity.
+#ID 21 Muscle Gain program: Hill sprints (6x200m) with a focus on explosive power and leg strength.
+#ID 22 Muscle Gain program: Walk 4 km with light resistance (weighted vest or light dumbbells).
+#ID 23 Muscle Gain program: Walk 5 km with moderate resistance (weighted vest or moderate dumbbells).
+#ID 24 Muscle Gain program: Walk 6 km with heavy resistance, incorporating uphill segments.
+#ID 25 Muscle Gain program: Push-ups (3x12), bodyweight squats (3x12), and resistance band rows (3x10).
+#ID 26 Muscle Gain program: Bulgarian split squats (3x10), pull-up progressions (3x6), and diamond push-ups (3x12).
+#ID 27 Muscle Gain program:
+                      Day 1: Arms and Chest
+                      exercise 1: 10x3 Push Ups
+                      exercise 2: 10x3 Tricep Dips
+                      Exercise 3: 10x3 Pike pushups
+                      Day 2: Rest
+                      Day 3: Legs
+                      exercise 1: Running for 3 min, walk for 30 sec. repeat 2 times.
+                      exercise 2: 10x3 squats
+                      Exercise 3: 10x3 Forward and backward lunge
+                      Day 4: Rest
+                      Day 5: Core
+                      exercise 1: 2 min Plank, rest for 1 min. repeat 4 times
+                      exercise 2: 10x3 Sit Ups
+#ID 28 Muscle Gain program:
+                      Dag 1: Bryst og Ryg
+                      exercise 1: Decline Dumbbell Presses 10x10
+                      exercise 2: Chin-Ups 10x10
+                      exercise 3: Incline Dumbbell Flyes 3x10
+                      exercise 4: One-Arm Dumbbell Rows 3x10
+                      Dag 2: Ben og mave
+                      exercise 1: Back Squats 10x10
+                      exercise 2: Lying Leg Curls 10x10
+                      exercise 3: Low-Cable Pull-Ins 3x15
+                      exercise 4: Seated Calf Raises 3x15
+                      Dag 3: Hvile
+                      Dag 4: Arme og Skulder
+                      exercise 1: Parallel Bar Dips 10x10
+                      exercise 2: Incline Hammer Curls 10x10
+                      exercise 3: Bent-Over Dumbbell Lateral Raises 3x10
+                      exercise 4:Seated DumbbellLateral Raises 3x10
+                      Dag 5: Hvile
+#ID 29 Muscle Gain program:
+                      Dag 1: Bryst og Ryg
+                      exercise 1: Decline Dumbbell Presses 10x10
+                      exercise 2: Chin-Ups 10x10
+                      exercise 3: Incline Dumbbell Flyes 3x10
+                      exercise 4: One-Arm Dumbbell Rows 3x10
+                      Dag 2: Ben og mave
+                      exercise 1: Back Squats 10x10
+                      exercise 2: Lying Leg Curls 10x10
+                      exercise 3: Low-Cable Pull-Ins 3x15
+                      exercise 4: Seated Calf Raises 3x15
+                      Dag 3: Hvile
+                      Dag 4: Arme og Skulder
+                      exercise 1: Parallel Bar Dips 10x10
+                      exercise 2: Incline Hammer Curls 10x10
+                      exercise 3: Bent-Over Dumbbell Lateral Raises 3x10
+                      exercise 4:Seated DumbbellLateral Raises 3x10
+                      Dag 5: Hvile
+#ID 30 Muscle Gain program:
+                      Dag 1: Bryst og Ryg
+                      exercise 1: Decline Dumbbell Presses 10x10
+                      exercise 2: Chin-Ups 10x10
+                      exercise 3: Incline Dumbbell Flyes 3x10
+                      exercise 4: One-Arm Dumbbell Rows 3x10
+                      Dag 2: Ben og mave
+                      exercise 1: Back Squats 10x10
+                      exercise 2: Lying Leg Curls 10x10
+                      exercise 3: Low-Cable Pull-Ins 3x15
+                      exercise 4: Seated Calf Raises 3x15
+                      Dag 3: Hvile
+                      Dag 4: Arme og Skulder
+                      exercise 1: Parallel Bar Dips 10x10
+                      exercise 2: Incline Hammer Curls 10x10
+                      exercise 3: Bent-Over Dumbbell Lateral Raises 3x10
+                      exercise 4:Seated DumbbellLateral Raises 3x10
+                      Dag 5: Hvile
+#ID 31 Muscle Gain program: Run 1 km at a steady pace, followed by bodyweight squats (3x12) and push-ups (3x10).
+#ID 32 Muscle Gain program: Interval running (3x500m), followed by Bulgarian split squats (3x8) and pull-up progressions (3x6).
+#ID 33 Muscle Gain program: Hill sprints (4x300m), followed by pistol squats (3x8) and weighted push-ups (3x10).
+#ID 34 Muscle Gain program: Run 1 km on a treadmill, followed by goblet squats (3x10) and dumbbell shoulder press (3x10).
+#ID 35 Muscle Gain program: Interval treadmill sprints (3x400m), followed by barbell squats (3x8) and cable rows (3x10).
+#ID 36 Muscle Gain program: Sprint intervals (4x400m on treadmill), followed by barbell deadlifts (3x8) and weighted pull-ups (3x8).
+#ID 37 Improve Cardio program:
+                      Day 1: running
+                      exercise 1: run 4 min, walk 1 min. repeat 3 times
+                      Day 2: Rest
+                      Day 3: running
+                      exercise 1: run 4 min, walk 1 min. repeat 3 times
+                      Day 4: Rest
+                      Day 5: Running
+                      exercise 1: run 4 min, walk 1 min. repeat 3 times
+#ID 38 Improve Cardio program:
+                      Day 1: running
+                      exercise 1: run 4 min, walk 1 min. repeat 3 times
+                      Day 2: Rest
+                      Day 3: running
+                      exercise 1: run 4 min, walk 1 min. repeat 3 times
+                      Day 4: Rest
+                      Day 5: Running
+                      exercise 1: run 4 min, walk 1 min. repeat 3 times
+#ID 39 Improve Cardio program:
+                       Day 1: running
+                       exercise 1: run 4 min, walk 1 min. repeat 3 times
+                       Day 2: Rest
+                       Day 3: running
+                       exercise 1: run 4 min, walk 1 min. repeat 3 times
+                       Day 4: Rest
+                       Day 5: Running
+                       exercise 1: run 4 min, walk 1 min. repeat 3 times
+#ID 40 Improve Cardio program: Walk 4 km at a steady pace.
+#ID 41 Improve Cardio program: Walk 5 km, alternating between fast and moderate paces every 5 minutes.
+#ID 42 Improve Cardio program: Walk 6 km at a brisk pace, including 2 uphill segments if possible.
+#ID 43 Improve Cardio program:
+                      Stomach and upper legs:
+                      exercise 1: Frog
+                      Core and arms:
+                      exercise 1: Down Up
+                      exercise 2: Plank Jump
+                      Whole body:
+                      exercise 1: Burpee & mountain climber
+                      Legs and ass:
+                      exercise 1: Boxjump
+                      exercise 2: One leg jump & reverse lunge
+                      exercise 3: Jump squat & statisk squat
+                      Legs:
+                      exercise 1: Englehop
+                      exercise 2: High Knees
+                      Stomach:
+                      exercise 1: Planke & atomic sit-up
+#ID 44 Improve Cardio program:
+                             Stomach and upper legs:
+                             exercise 1: Frog
+                             Core and arms:
+                             exercise 1: Down Up
+                             exercise 2: Plank Jump
+                             Whole body:
+                             exercise 1: Burpee & mountain climber
+                             Legs and ass:
+                             exercise 1: Boxjump
+                             exercise 2: One leg jump & reverse lunge
+                             exercise 3: Jump squat & statisk squat
+                             Legs:
+                             exercise 1: Englehop
+                             exercise 2: High Knees
+                             Stomach:
+                             exercise 1: Planke & atomic sit-up
+#ID 45 Improve Cardio program:
+                             Stomach and upper legs:
+                             exercise 1: Frog
+                             Core and arms:
+                             exercise 1: Down Up
+                             exercise 2: Plank Jump
+                             Whole body:
+                             exercise 1: Burpee & mountain climber
+                             Legs and ass:
+                             exercise 1: Boxjump
+                             exercise 2: One leg jump & reverse lunge
+                             exercise 3: Jump squat & statisk squat
+                             Legs:
+                             exercise 1: Englehop
+                             exercise 2: High Knees
+                             Stomach:
+                             exercise 1: Planke & atomic sit-up
+#ID 46 Improve Cardio program:
+                             Stomach and upper legs:
+                             exercise 1: Frog
+                             Core and arms:
+                             exercise 1: Down Up
+                             exercise 2: Plank Jump
+                             Whole body:
+                             exercise 1: Burpee & mountain climber
+                             Legs and ass:
+                             exercise 1: Boxjump
+                             exercise 2: One leg jump & reverse lunge
+                             exercise 3: Jump squat & statisk squat
+                             Legs:
+                             exercise 1: Englehop
+                             exercise 2: High Knees
+                             Stomach:
+                             exercise 1: Planke & atomic sit-up
+#ID 47 Improve Cardio program:
+                             Stomach and upper legs:
+                             exercise 1: Frog
+                             Core and arms:
+                             exercise 1: Down Up
+                             exercise 2: Plank Jump
+                             Whole body:
+                             exercise 1: Burpee & mountain climber
+                             Legs and ass:
+                             exercise 1: Boxjump
+                             exercise 2: One leg jump & reverse lunge
+                             exercise 3: Jump squat & statisk squat
+                             Legs:
+                             exercise 1: Englehop
+                             exercise 2: High Knees
+                             Stomach:
+                             exercise 1: Planke & atomic sit-up
+#ID 48 Improve Cardio program:
+                             Stomach and upper legs:
+                             exercise 1: Frog
+                             Core and arms:
+                             exercise 1: Down Up
+                             exercise 2: Plank Jump
+                             Whole body:
+                             exercise 1: Burpee & mountain climber
+                             Legs and ass:
+                             exercise 1: Boxjump
+                             exercise 2: One leg jump & reverse lunge
+                             exercise 3: Jump squat & statisk squat
+                             Legs:
+                             exercise 1: Englehop
+                             exercise 2: High Knees
+                             Stomach:
+                             exercise 1: Planke & atomic sit-up
+#ID 49
+                             Stomach and upper legs:
+                             exercise 1: Frog
+                             Core and arms:
+                             exercise 1: Down Up
+                             exercise 2: Plank Jump
+                             Whole body:
+                             exercise 1: Burpee & mountain climber
+                             Legs and ass:
+                             exercise 1: Boxjump
+                             exercise 2: One leg jump & reverse lunge
+                             exercise 3: Jump squat & statisk squat
+                             Legs:
+                             exercise 1: Englehop
+                             exercise 2: High Knees
+                             Stomach:
+                             exercise 1: Planke & atomic sit-up
+#ID 50
+                             Stomach and upper legs:
+                             exercise 1: Frog
+                             Core and arms:
+                             exercise 1: Down Up
+                             exercise 2: Plank Jump
+                             Whole body:
+                             exercise 1: Burpee & mountain climber
+                             Legs and ass:
+                             exercise 1: Boxjump
+                             exercise 2: One leg jump & reverse lunge
+                             exercise 3: Jump squat & statisk squat
+                             Legs:
+                             exercise 1: Englehop
+                             exercise 2: High Knees
+                             Stomach:
+                             exercise 1: Planke & atomic sit-up
+#ID 51
+                             Stomach and upper legs:
+                             exercise 1: Frog
+                             Core and arms:
+                             exercise 1: Down Up
+                             exercise 2: Plank Jump
+                             Whole body:
+                             exercise 1: Burpee & mountain climber
+                             Legs and ass:
+                             exercise 1: Boxjump
+                             exercise 2: One leg jump & reverse lunge
+                             exercise 3: Jump squat & statisk squat
+                             Legs:
+                             exercise 1: Englehop
+                             exercise 2: High Knees
+                             Stomach:
+                             exercise 1: Planke & atomic sit-up
+#ID 52
+                             Stomach and upper legs:
+                             exercise 1: Frog
+                             Core and arms:
+                             exercise 1: Down Up
+                             exercise 2: Plank Jump
+                             Whole body:
+                             exercise 1: Burpee & mountain climber
+                             Legs and ass:
+                             exercise 1: Boxjump
+                             exercise 2: One leg jump & reverse lunge
+                             exercise 3: Jump squat & statisk squat
+                             Legs:
+                             exercise 1: Englehop
+                             exercise 2: High Knees
+                             Stomach:
+                             exercise 1: Planke & atomic sit-up
+#ID 53
+                             Stomach and upper legs:
+                             exercise 1: Frog
+                             Core and arms:
+                             exercise 1: Down Up
+                             exercise 2: Plank Jump
+                             Whole body:
+                             exercise 1: Burpee & mountain climber
+                             Legs and ass:
+                             exercise 1: Boxjump
+                             exercise 2: One leg jump & reverse lunge
+                             exercise 3: Jump squat & statisk squat
+                             Legs:
+                             exercise 1: Englehop
+                             exercise 2: High Knees
+                             Stomach:
+                             exercise 1: Planke & atomic sit-up
+#ID 54
+                             Stomach and upper legs:
+                             exercise 1: Frog
+                             Core and arms:
+                             exercise 1: Down Up
+                             exercise 2: Plank Jump
+                             Whole body:
+                             exercise 1: Burpee & mountain climber
+                             Legs and ass:
+                             exercise 1: Boxjump
+                             exercise 2: One leg jump & reverse lunge
+                             exercise 3: Jump squat & statisk squat
+                             Legs:
+                             exercise 1: Englehop
+                             exercise 2: High Knees
+                             Stomach:
+                             exercise 1: Planke & atomic sit-up
+#ID 55 General Health plan: Run 2 km at a steady pace, rest for 2 minutes, repeat 3 times.
+#ID 56 General Health plan: Run 3 km at a moderate pace, include 2 sprints of 500m each.
+#ID 57 General Health plan: Interval training - 1 km sprint, 500m jog, repeat 4 times.
+#ID 58 General Health plan: Walk 3 km at a moderate pace
+#ID 59 General Health plan: Walk 5 km with alternating paces every 1 km
+#ID 60 General Health plan: Walk 6 km briskly, including uphill segments if available.
+#ID 61 General Health plan:
+                      Stomach and upper legs:
+                      exercise 1: Frog
+                      Core and arms:
+                      exercise 1: Down Up
+                      exercise 2: Plank Jump
+                      Whole body:
+                      exercise 1: Burpee & mountain climber
+                      Legs and ass:
+                      exercise 1: Boxjump
+                      exercise 2: One leg jump & reverse lunge
+                      exercise 3: Jump squat & statisk squat
+                      Legs:
+                      exercise 1: Englehop
+                      exercise 2: High Knees
+                      Stomach:
+                      exercise 1: Planke & atomic sit-up
+#ID 62 General Health plan:
+                      Stomach and upper legs:
+                      exercise 1: Frog
+                      Core and arms:
+                      exercise 1: Down Up
+                      exercise 2: Plank Jump
+                      Whole body:
+                      exercise 1: Burpee & mountain climber
+                      Legs and ass:
+                      exercise 1: Boxjump
+                      exercise 2: One leg jump & reverse lunge
+                      exercise 3: Jump squat & statisk squat
+                      Legs:
+                      exercise 1: Englehop
+                      exercise 2: High Knees
+                      Stomach:
+                      exercise 1: Planke & atomic sit-up
+#ID 63 General Health plan:
+Stomach and upper legs:
+                      exercise 1: Frog
+                      Core and arms:
+                      exercise 1: Down Up
+                      exercise 2: Plank Jump
+                      Whole body:
+                      exercise 1: Burpee & mountain climber
+                      Legs and ass:
+                      exercise 1: Boxjump
+                      exercise 2: One leg jump & reverse lunge
+                      exercise 3: Jump squat & statisk squat
+                      Legs:
+                      exercise 1: Englehop
+                      exercise 2: High Knees
+                      Stomach:
+                      exercise 1: Planke & atomic sit-up
+#ID 64 General Health plan:
+Stomach and upper legs:
+                      exercise 1: Frog
+                      Core and arms:
+                      exercise 1: Down Up
+                      exercise 2: Plank Jump
+                      Whole body:
+                      exercise 1: Burpee & mountain climber
+                      Legs and ass:
+                      exercise 1: Boxjump
+                      exercise 2: One leg jump & reverse lunge
+                      exercise 3: Jump squat & statisk squat
+                      Legs:
+                      exercise 1: Englehop
+                      exercise 2: High Knees
+                      Stomach:
+                      exercise 1: Planke & atomic sit-up
+#ID 65 General Health plan:
+Stomach and upper legs:
+                      exercise 1: Frog
+                      Core and arms:
+                      exercise 1: Down Up
+                      exercise 2: Plank Jump
+                      Whole body:
+                      exercise 1: Burpee & mountain climber
+                      Legs and ass:
+                      exercise 1: Boxjump
+                      exercise 2: One leg jump & reverse lunge
+                      exercise 3: Jump squat & statisk squat
+                      Legs:
+                      exercise 1: Englehop
+                      exercise 2: High Knees
+                      Stomach:
+                      exercise 1: Planke & atomic sit-up
+#ID 66 General Health plan:
+Stomach and upper legs:
+                      exercise 1: Frog
+                      Core and arms:
+                      exercise 1: Down Up
+                      exercise 2: Plank Jump
+                      Whole body:
+                      exercise 1: Burpee & mountain climber
+                      Legs and ass:
+                      exercise 1: Boxjump
+                      exercise 2: One leg jump & reverse lunge
+                      exercise 3: Jump squat & statisk squat
+                      Legs:
+                      exercise 1: Englehop
+                      exercise 2: High Knees
+                      Stomach:
+                      exercise 1: Planke & atomic sit-up
+#ID 67 General Health plan:
+Stomach and upper legs:
+                      exercise 1: Frog
+                      Core and arms:
+                      exercise 1: Down Up
+                      exercise 2: Plank Jump
+                      Whole body:
+                      exercise 1: Burpee & mountain climber
+                      Legs and ass:
+                      exercise 1: Boxjump
+                      exercise 2: One leg jump & reverse lunge
+                      exercise 3: Jump squat & statisk squat
+                      Legs:
+                      exercise 1: Englehop
+                      exercise 2: High Knees
+                      Stomach:
+                      exercise 1: Planke & atomic sit-up
+#ID 68 General Health plan: Run 1 km, followed by bodyweight squats (3x10) and planks (3x15s).
+#ID 69 General Health plan: Run 2 km, followed by Bulgarian split squats (3x8) and side planks (3x20s).
+#ID 70 General Health plan: Interval sprints (3x500m), followed by pistol squats (3x8) and push-ups (3x12).
+#ID 71 General Health plan: Run 1 km on the treadmill, followed by dumbbell bench press (3x10) and leg press (3x12).
+#ID 72 General Health plan: Run 2 km on a treadmill, followed by barbell squats (3x10) and seated rows (3x10).
+#ID 73 General Health plan: Run 3 km on a treadmill, followed by deadlifts (3x8) and weighted pull-ups (3x6).
 
-#ID 2 Weight Loss program:
-               Day 1: 30 minutters konditionstraening
-               Day 2: Hvile
-               Day 3: Full body (i fitness center)
-               Day 4: Hvile
-               Day 5: Full body (Hjemme)
-               Day 6: Hvile
-               Day 7: Yoga
-
-#ID 3 Weight Loss program:
-               Day 1: 30 minutters konditionstraening
-               Day 2: Hvile
-               Day 3: Full body (i fitness center)
-               Day 4: Hvile
-               Day 5: Full body (Hjemme)
-               Day 6: Hvile
-               Day 7: Yoga
-#ID 4 Muscle Gain program:
-               Dag 1: Bryst og Ryg
-               exercise 1: Decline Dumbbell Presses 10x10
-               exercise 2: Chin-Ups 10x10
-               exercise 3: Incline Dumbbell Flyes 3x10
-               exercise 4: One-Arm Dumbbell Rows 3x10
-               Dag 2: Ben og mave
-               exercise 1: Back Squats 10x10
-               exercise 2: Lying Leg Curls 10x10
-               exercise 3: Low-Cable Pull-Ins 3x15
-               exercise 4: Seated Calf Raises 3x15
-               Dag 3: Hvile
-               Dag 4: Arme og Skulder
-               exercise 1: Parallel Bar Dips 10x10
-               exercise 2: Incline Hammer Curls 10x10
-               exercise 3: Bent-Over Dumbbell Lateral Raises 3x10
-               exercise 4:Seated DumbbellLateral Raises 3x10
-               Dag 5: Hvile
-
-#ID 5 Muscle Gain program:
-               Day 1: Arms and Chest
-               exercise 1: 10x3 Push Ups
-               exercise 2: 10x3 Tricep Dips
-               Exercise 3: 10x3 Pike pushups
-               Day 2: Rest
-               Day 3: Legs
-               exercise 1: Running for 3 min, walk for 30 sec. repeat 2 times.
-               exercise 2: 10x3 squats
-               Exercise 3: 10x3 Forward and backward lunge
-               Day 4: Rest
-               Day 5: Core
-               exercise 1: 2 min Plank, rest for 1 min. repeat 4 times
-               exercise 2: 10x3 Sit Ups
-
-#ID 6 Muscle Gain program:
-               Dag 1: Bryst og Ryg
-               exercise 1: Decline Dumbbell Presses 10x10
-               exercise 2: Chin-Ups 10x10
-               exercise 3: Incline Dumbbell Flyes 3x10
-               exercise 4: One-Arm Dumbbell Rows 3x10
-               Dag 2: Ben og mave
-               exercise 1: Back Squats 10x10
-               exercise 2: Lying Leg Curls 10x10
-               exercise 3: Low-Cable Pull-Ins 3x15
-               exercise 4: Seated Calf Raises 3x15
-               Dag 3: Hvile
-               Dag 4: Arme og Skulder
-               exercise 1: Parallel Bar Dips 10x10
-               exercise 2: Incline Hammer Curls 10x10
-               exercise 3: Bent-Over Dumbbell Lateral Raises 3x10
-               exercise 4:Seated DumbbellLateral Raises 3x10
-               Dag 5: Hvile
-
-#ID 7 Muscle Gain program:
-               Day 1: Arms and Chest
-               exercise 1: 10x3 Push Ups
-               exercise 2: 10x3 Tricep Dips
-               Exercise 3: 10x3 Pike pushups
-               Day 2: Rest
-               Day 3: Legs
-               exercise 1: Running for 3 min, walk for 30 sec. repeat 2 times.
-               exercise 2: 10x3 squats
-               Exercise 3: 10x3 Forward and backward lunge
-               Day 4: Rest
-               Day 5: Core
-               exercise 1: 2 min Plank, rest for 1 min. repeat 4 times
-               exercise 2: 10x3 Sit Ups
-
-#ID 8 Improve Cardio program:
-               Stomach and upper legs:
-               exercise 1: Frog
-               Core and arms:
-               exercise 1: Down Up
-               exercise 2: Plank Jump
-               Whole body:
-               exercise 1: Burpee & mountain climber
-               Legs and ass:
-               exercise 1: Boxjump
-               exercise 2: One leg jump & reverse lunge
-               exercise 3: Jump squat & statisk squat
-               Legs:
-               exercise 1: Englehop
-               exercise 2: High Knees
-               Stomach:
-               exercise 1: Planke & atomic sit-up
-
-#ID 9 Improve Cardio program:
-               Day 1: running
-               exercise 1: run 4 min, walk 1 min. repeat 3 times
-               Day 2: Rest
-               Day 3: running
-               exercise 1: run 4 min, walk 1 min. repeat 3 times
-               Day 4: Rest
-               Day 5: Running
-               exercise 1: run 4 min, walk 1 min. repeat 3 times
-
-#ID 10 Improve Cardio program:
-               Stomach and upper legs:
-               exercise 1: Frog
-               Core and arms:
-               exercise 1: Down Up
-               exercise 2: Plank Jump
-               Whole body:
-               exercise 1: Burpee & mountain climber
-               Legs and ass:
-               exercise 1: Boxjump
-               exercise 2: One leg jump & reverse lunge
-               exercise 3: Jump squat & statisk squat
-               Legs:
-               exercise 1: Englehop
-               exercise 2: High Knees
-               Stomach:
-               exercise 1: Planke & atomic sit-up
-
-#ID 11 Improve Cardio program:
-               Day 1: running 
-               exercise 1: run 4 min, walk 1 min. repeat 3 times 
-               Day 2: Rest
-               Day 3: running 
-               exercise 1: run 4 min, walk 1 min. repeat 3 times 
-               Day 4: Rest 
-               Day 5: Running 
-               exercise 1: run 4 min, walk 1 min. repeat 3 times 
-
-#ID 12 maintain fitness level
-               "Keep up what you are doing right now"
-
-#ID 13 program 13
-#ID 14 program 14
-#ID 15 program 15
-#ID 16 program 16
-#ID 17 program 17
-#ID 18 program 18
-#ID 19 program 19
-#ID 20 program 20
-#ID 21 program 21
-#ID 22 program 22
-#ID 23 program 23
-#ID 24 program 24
-#ID 25 program 25

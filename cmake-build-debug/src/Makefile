@@ -140,6 +140,20 @@ fitness/fast:
 	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/build
 .PHONY : fitness/fast
 
+# Convenience name for target.
+src/CMakeFiles/recommendation.dir/rule:
+	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/recommendation.dir/rule
+.PHONY : src/CMakeFiles/recommendation.dir/rule
+
+# Convenience name for target.
+recommendation: src/CMakeFiles/recommendation.dir/rule
+.PHONY : recommendation
+
+# fast build rule for target.
+recommendation/fast:
+	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/build
+.PHONY : recommendation/fast
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -170,6 +184,7 @@ user.o: user.c.o
 # target to build an object file
 user.c.o:
 	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/user.c.o
+	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/user.c.o
 .PHONY : user.c.o
 
 user.i: user.c.i
@@ -178,6 +193,7 @@ user.i: user.c.i
 # target to preprocess a source file
 user.c.i:
 	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/user.c.i
+	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/user.c.i
 .PHONY : user.c.i
 
 user.s: user.c.s
@@ -186,6 +202,7 @@ user.s: user.c.s
 # target to generate assembly for a file
 user.c.s:
 	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/user.c.s
+	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/user.c.s
 .PHONY : user.c.s
 
 workoutrecommendations.o: workoutrecommendations.c.o
@@ -194,6 +211,7 @@ workoutrecommendations.o: workoutrecommendations.c.o
 # target to build an object file
 workoutrecommendations.c.o:
 	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/workoutrecommendations.c.o
+	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/workoutrecommendations.c.o
 .PHONY : workoutrecommendations.c.o
 
 workoutrecommendations.i: workoutrecommendations.c.i
@@ -202,6 +220,7 @@ workoutrecommendations.i: workoutrecommendations.c.i
 # target to preprocess a source file
 workoutrecommendations.c.i:
 	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/workoutrecommendations.c.i
+	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/workoutrecommendations.c.i
 .PHONY : workoutrecommendations.c.i
 
 workoutrecommendations.s: workoutrecommendations.c.s
@@ -210,6 +229,7 @@ workoutrecommendations.s: workoutrecommendations.c.s
 # target to generate assembly for a file
 workoutrecommendations.c.s:
 	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/workoutrecommendations.c.s
+	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/workoutrecommendations.c.s
 .PHONY : workoutrecommendations.c.s
 
 # Help Target
@@ -222,6 +242,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... fitness"
+	@echo "... recommendation"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

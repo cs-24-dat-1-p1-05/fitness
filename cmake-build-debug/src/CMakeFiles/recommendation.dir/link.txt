@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc librecommendation.a CMakeFiles/recommendation.dir/workoutrecommendations.c.o CMakeFiles/recommendation.dir/user.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib librecommendation.a

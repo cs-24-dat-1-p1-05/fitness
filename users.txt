@@ -46,3 +46,19 @@ Fitness Assessment (WHR): 0.89
 WHR Health Risk: High
 Recommendation ID: 4
 ----------------------------
+Name: hannah
+Age: 27
+Gender: Female
+Height: 168 cm
+Weight: 75.000000 kg
+Hip: 97 cm
+Waist: 84 cm
+Location: 2
+Preferences: 4
+Exercise Purpose: General Health
+Fitness Assessment (BMI): 26.57
+BMI Category: Overweight
+Fitness Assessment (WHR): 0.87
+WHR Health Risk: High
+Recommendation ID: 71
+----------------------------

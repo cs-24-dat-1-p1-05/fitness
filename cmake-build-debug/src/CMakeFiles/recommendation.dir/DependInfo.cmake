@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/frederikke/Documents/GitHub/fitness/src/user.c" "src/CMakeFiles/recommendation.dir/user.c.o" "gcc" "src/CMakeFiles/recommendation.dir/user.c.o.d"
-  "/Users/frederikke/Documents/GitHub/fitness/src/workoutrecommendations.c" "src/CMakeFiles/recommendation.dir/workoutrecommendations.c.o" "gcc" "src/CMakeFiles/recommendation.dir/workoutrecommendations.c.o.d"
+  "/Users/celina/Documents/GitHub/fitness/src/user.c" "src/CMakeFiles/recommendation.dir/user.c.o" "gcc" "src/CMakeFiles/recommendation.dir/user.c.o.d"
+  "/Users/celina/Documents/GitHub/fitness/src/workoutrecommendations.c" "src/CMakeFiles/recommendation.dir/workoutrecommendations.c.o" "gcc" "src/CMakeFiles/recommendation.dir/workoutrecommendations.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

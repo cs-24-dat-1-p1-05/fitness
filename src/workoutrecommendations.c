@@ -160,7 +160,7 @@ int calculate_fitness_level(user_t user) {
     fitness_level += select_assessment(user.preferences, user.location);
 
     if (fitness_level == 4) {
-        fitnesslevel--;
+        fitness_level--;
     }
 
     return fitness_level;

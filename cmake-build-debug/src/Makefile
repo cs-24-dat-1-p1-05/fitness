@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/frederikke/Documents/GitHub/fitness
+CMAKE_SOURCE_DIR = /Users/celina/Documents/GitHub/fitness
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/celina/Documents/GitHub/fitness/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,14 +97,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src//CMakeFiles/progress.marks
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles 0
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/celina/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src//CMakeFiles/progress.marks
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/celina/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -113,22 +113,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/fitness.dir/rule:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/fitness.dir/rule
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/fitness.dir/rule
 .PHONY : src/CMakeFiles/fitness.dir/rule
 
 # Convenience name for target.
@@ -137,12 +137,12 @@ fitness: src/CMakeFiles/fitness.dir/rule
 
 # fast build rule for target.
 fitness/fast:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/build
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/build
 .PHONY : fitness/fast
 
 # Convenience name for target.
 src/CMakeFiles/recommendation.dir/rule:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/recommendation.dir/rule
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/recommendation.dir/rule
 .PHONY : src/CMakeFiles/recommendation.dir/rule
 
 # Convenience name for target.
@@ -151,7 +151,7 @@ recommendation: src/CMakeFiles/recommendation.dir/rule
 
 # fast build rule for target.
 recommendation/fast:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/build
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/build
 .PHONY : recommendation/fast
 
 main.o: main.c.o
@@ -159,7 +159,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/main.c.o
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -167,7 +167,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/main.c.i
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -175,7 +175,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/main.c.s
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/main.c.s
 .PHONY : main.c.s
 
 user.o: user.c.o
@@ -183,8 +183,8 @@ user.o: user.c.o
 
 # target to build an object file
 user.c.o:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/user.c.o
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/user.c.o
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/user.c.o
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/user.c.o
 .PHONY : user.c.o
 
 user.i: user.c.i
@@ -192,8 +192,8 @@ user.i: user.c.i
 
 # target to preprocess a source file
 user.c.i:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/user.c.i
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/user.c.i
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/user.c.i
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/user.c.i
 .PHONY : user.c.i
 
 user.s: user.c.s
@@ -201,8 +201,8 @@ user.s: user.c.s
 
 # target to generate assembly for a file
 user.c.s:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/user.c.s
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/user.c.s
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/user.c.s
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/user.c.s
 .PHONY : user.c.s
 
 workoutrecommendations.o: workoutrecommendations.c.o
@@ -210,8 +210,8 @@ workoutrecommendations.o: workoutrecommendations.c.o
 
 # target to build an object file
 workoutrecommendations.c.o:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/workoutrecommendations.c.o
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/workoutrecommendations.c.o
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/workoutrecommendations.c.o
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/workoutrecommendations.c.o
 .PHONY : workoutrecommendations.c.o
 
 workoutrecommendations.i: workoutrecommendations.c.i
@@ -219,8 +219,8 @@ workoutrecommendations.i: workoutrecommendations.c.i
 
 # target to preprocess a source file
 workoutrecommendations.c.i:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/workoutrecommendations.c.i
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/workoutrecommendations.c.i
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/workoutrecommendations.c.i
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/workoutrecommendations.c.i
 .PHONY : workoutrecommendations.c.i
 
 workoutrecommendations.s: workoutrecommendations.c.s
@@ -228,8 +228,8 @@ workoutrecommendations.s: workoutrecommendations.c.s
 
 # target to generate assembly for a file
 workoutrecommendations.c.s:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/workoutrecommendations.c.s
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/workoutrecommendations.c.s
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/fitness.dir/build.make src/CMakeFiles/fitness.dir/workoutrecommendations.c.s
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/recommendation.dir/build.make src/CMakeFiles/recommendation.dir/workoutrecommendations.c.s
 .PHONY : workoutrecommendations.c.s
 
 # Help Target
@@ -263,6 +263,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

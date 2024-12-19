@@ -266,7 +266,7 @@ user_t returning_user(const char *name) {
 
                     if (sscanf(line, "Age: %d", &user.age) == 1) continue;
                     if (strstr(line, "Gender: ") && strstr(line, "Female")) {
-                        user.gender = 0;
+                        user.gender = 2;
                         continue;
                     } else if (strstr(line, "Gender: ") && strstr(line, "Male")) {
                         user.gender = 1;

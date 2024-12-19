@@ -9,8 +9,8 @@ Features:
 Follow the prompt on-screen and enter the asked user data to get the personalized recommendation.
 
 Developed by 
-Frederikke 
-Nikolai
-Oliver 
-Mobina 
+Frederikke, 
+Nikolai,
+Oliver, 
+Mobina, 
 Celina

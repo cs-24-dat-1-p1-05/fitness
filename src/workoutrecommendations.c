@@ -144,7 +144,7 @@ int calculate_id(user_t user) {
 
 int calculate_fitness_level(user_t user) {
 
-    int fitness_level = 1;
+    int fitness_level = 0;
 
     // BMI contribution
     if (user.fitness_assessment_bmi < 24.9) {
@@ -158,6 +158,10 @@ int calculate_fitness_level(user_t user) {
         }
 
     fitness_level += select_assessment(user.preferences, user.location);
+
+    if (fitness_level == 4) {
+        fitnesslevel--;
+    }
 
     return fitness_level;
 }

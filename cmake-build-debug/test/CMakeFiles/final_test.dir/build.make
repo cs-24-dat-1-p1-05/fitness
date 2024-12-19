@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/celina/Documents/GitHub/fitness
+CMAKE_SOURCE_DIR = /Users/frederikke/Documents/GitHub/fitness
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/celina/Documents/GitHub/fitness/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug
 
 # Utility rule file for final_test.
 
@@ -67,7 +67,7 @@ include test/CMakeFiles/final_test.dir/compiler_depend.make
 include test/CMakeFiles/final_test.dir/progress.make
 
 test/CMakeFiles/final_test:
-	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/test && ./test_2
+	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/test && ./test_2
 
 final_test: test/CMakeFiles/final_test
 final_test: test/CMakeFiles/final_test.dir/build.make
@@ -78,10 +78,10 @@ test/CMakeFiles/final_test.dir/build: final_test
 .PHONY : test/CMakeFiles/final_test.dir/build
 
 test/CMakeFiles/final_test.dir/clean:
-	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/test && $(CMAKE_COMMAND) -P CMakeFiles/final_test.dir/cmake_clean.cmake
+	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/test && $(CMAKE_COMMAND) -P CMakeFiles/final_test.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/final_test.dir/clean
 
 test/CMakeFiles/final_test.dir/depend:
-	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/celina/Documents/GitHub/fitness /Users/celina/Documents/GitHub/fitness/test /Users/celina/Documents/GitHub/fitness/cmake-build-debug /Users/celina/Documents/GitHub/fitness/cmake-build-debug/test /Users/celina/Documents/GitHub/fitness/cmake-build-debug/test/CMakeFiles/final_test.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/frederikke/Documents/GitHub/fitness /Users/frederikke/Documents/GitHub/fitness/test /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/test /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/test/CMakeFiles/final_test.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : test/CMakeFiles/final_test.dir/depend
 

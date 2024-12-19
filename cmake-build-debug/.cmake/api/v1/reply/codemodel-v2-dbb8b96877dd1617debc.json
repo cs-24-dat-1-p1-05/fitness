@@ -100,14 +100,14 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "fitness::@145eef247bfb46b6828c",
-					"jsonFile" : "target-fitness-Debug-bd5f8093e45870645ae9.json",
+					"jsonFile" : "target-fitness-Debug-61b500de57be12e2fdb9.json",
 					"name" : "fitness",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "recommendation::@145eef247bfb46b6828c",
-					"jsonFile" : "target-recommendation-Debug-055b1d391afb15f3518c.json",
+					"jsonFile" : "target-recommendation-Debug-2e5d2165d2e47f5ee473.json",
 					"name" : "recommendation",
 					"projectIndex" : 0
 				},
@@ -121,56 +121,56 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "test_2::@36f028580bb02cc8272a",
-					"jsonFile" : "target-test_2-Debug-906f51066dfbb198954e.json",
+					"jsonFile" : "target-test_2-Debug-b850ae57cb786b7aeb2b.json",
 					"name" : "test_2",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "test_adjust_recommendation::@36f028580bb02cc8272a",
-					"jsonFile" : "target-test_adjust_recommendation-Debug-b161926887303c3eb890.json",
+					"jsonFile" : "target-test_adjust_recommendation-Debug-c0fcff0137854e0b0df3.json",
 					"name" : "test_adjust_recommendation",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "test_calculate_id::@36f028580bb02cc8272a",
-					"jsonFile" : "target-test_calculate_id-Debug-68da5f72c51af6db5568.json",
+					"jsonFile" : "target-test_calculate_id-Debug-bc8daa6f1b8857c1a06a.json",
 					"name" : "test_calculate_id",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "test_display_recommendation::@36f028580bb02cc8272a",
-					"jsonFile" : "target-test_display_recommendation-Debug-91e0207786a178265538.json",
+					"jsonFile" : "target-test_display_recommendation-Debug-1c35e8e5f8d46ec9a864.json",
 					"name" : "test_display_recommendation",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "test_load_user::@36f028580bb02cc8272a",
-					"jsonFile" : "target-test_load_user-Debug-03c817478279e27ea9fc.json",
+					"jsonFile" : "target-test_load_user-Debug-d9a85b6a3b940a974468.json",
 					"name" : "test_load_user",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "test_returning_user::@36f028580bb02cc8272a",
-					"jsonFile" : "target-test_returning_user-Debug-52ebae0546d9ec14ebb1.json",
+					"jsonFile" : "target-test_returning_user-Debug-62757700c2f0fc238af6.json",
 					"name" : "test_returning_user",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "test_save_user::@36f028580bb02cc8272a",
-					"jsonFile" : "target-test_save_user-Debug-129a210483fa475b73a0.json",
+					"jsonFile" : "target-test_save_user-Debug-bdfb0f5f9c1c79978dbd.json",
 					"name" : "test_save_user",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "test_update_user_files::@36f028580bb02cc8272a",
-					"jsonFile" : "target-test_update_user_files-Debug-8ae81d630a110e146dc2.json",
+					"jsonFile" : "target-test_update_user_files-Debug-43b1d77e403acb04bff7.json",
 					"name" : "test_update_user_files",
 					"projectIndex" : 0
 				}
@@ -180,8 +180,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/celina/Documents/GitHub/fitness/cmake-build-debug",
-		"source" : "/Users/celina/Documents/GitHub/fitness"
+		"build" : "/Users/frederikke/Documents/GitHub/fitness/cmake-build-debug",
+		"source" : "/Users/frederikke/Documents/GitHub/fitness"
 	},
 	"version" : 
 	{

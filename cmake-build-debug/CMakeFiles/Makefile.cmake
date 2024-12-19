@@ -85,11 +85,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake"
-  "/Users/celina/Documents/GitHub/fitness/CMakeLists.txt"
+  "/Users/frederikke/Documents/GitHub/fitness/CMakeLists.txt"
   "CMakeFiles/3.29.6/CMakeCCompiler.cmake"
   "CMakeFiles/3.29.6/CMakeSystem.cmake"
-  "/Users/celina/Documents/GitHub/fitness/src/CMakeLists.txt"
-  "/Users/celina/Documents/GitHub/fitness/test/CMakeLists.txt"
+  "/Users/frederikke/Documents/GitHub/fitness/src/CMakeLists.txt"
+  "/Users/frederikke/Documents/GitHub/fitness/test/CMakeLists.txt"
   )
 
 # The corresponding makefile is:

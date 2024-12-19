@@ -34,7 +34,6 @@ void test_save_user() {
         "Location: 2\n"
         "Preferences: 3\n"
         "Exercise Purpose: Weight Loss\n"
-        "Exercise Days per Week: 5\n"
         "Fitness Assessment (BMI): %.2f\n"
         "BMI Category: %s\n"
         "Fitness Assessment (WHR): %.2f\n"
@@ -79,13 +78,13 @@ void test_save_user() {
             strcpy(whr_health_risk, "High");
         }
     } else {
-        if (test_user.fitness_assessment_whr < 0.80) {
+       if (test_user.fitness_assessment_whr < 0.80) {
             strcpy(whr_health_risk, "Low");
-        } else if (test_user.fitness_assessment_whr >= 0.80 && test_user.fitness_assessment_whr < 0.85) {
+       } else if (test_user.fitness_assessment_whr >= 0.80 && test_user.fitness_assessment_whr < 0.85) {
             strcpy(whr_health_risk, "Moderate");
-        } else {
+       } else {
             strcpy(whr_health_risk, "High");
-        }
+       }
     }
 
     char expected[1024];

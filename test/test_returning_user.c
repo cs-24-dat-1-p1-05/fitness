@@ -35,7 +35,6 @@ void test_user_found() {
         "Location: 123\n"
         "Preferences: 456\n"
         "Exercise Purpose: General Fitness\n"
-        "Exercise Days per Week: 3\n"
         "Fitness Assessment (BMI): 23.3\n"
         "Fitness Assessment (WHR): 0.84\n"
         "Recommendation ID: 1\n"
@@ -57,7 +56,6 @@ void test_user_found() {
     assert(user.location == 123);
     assert(user.preferences == 456);
     assert(strcmp(user.exercise_purpose, "General Fitness") == 0);
-    assert(user.exercise_days_per_week == 3);
     assert(user.fitness_assessment_bmi == 23.3f);
     assert(user.fitness_assessment_whr == 0.84f);
     assert(user.recommendation_id == 1);
@@ -92,7 +90,6 @@ void test_user_not_found() {
     assert(user.location == 0);
     assert(user.preferences == 0);
     assert(strcmp(user.exercise_purpose, "") == 0);
-    assert(user.exercise_days_per_week == 0);
     assert(user.fitness_assessment_bmi == 0.0f);
     assert(user.fitness_assessment_whr == 0.0f);
     assert(user.recommendation_id == -1);

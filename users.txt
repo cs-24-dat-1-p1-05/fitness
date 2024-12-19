@@ -30,3 +30,19 @@ Fitness Assessment (WHR): 1.12
 WHR Health Risk: High
 Recommendation ID: 4
 ----------------------------
+Name: Tina
+Age: 44
+Gender: Female
+Height: 159 cm
+Weight: 55.000000 kg
+Hip: 90 cm
+Waist: 80 cm
+Location: 1
+Preferences: 1
+Exercise Purpose: Weight Loss
+Fitness Assessment (BMI): 21.76
+BMI Category: Normal weight
+Fitness Assessment (WHR): 0.89
+WHR Health Risk: High
+Recommendation ID: 4
+----------------------------

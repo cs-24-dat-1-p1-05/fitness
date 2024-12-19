@@ -118,25 +118,28 @@ int calculate_id(user_t user) {
         id = 55; // Starting range for maintaining fitness programs
 }
 
+
+
     // Adjust further based on preferences
     if (user.preferences == 1) {
-        return id + 0;
+        id += 0;
     } if (user.preferences == 2) {
-        return id + 3;
+        id += 3;
     } if (user.preferences == 3 && user.location == 1) {
-        return id + 6;
+        id += 6;
     } if (user.preferences == 3 && user.location == 2) {
-        return id + 9;
-    }if (user.preferences == 4 && user.location == 1) {
-        return id + 12;
+        id += 9;
+    } if (user.preferences == 4 && user.location == 1) {
+        id += 12;
     } if (user.preferences == 4 && user.location == 2) {
-        return id + 15;
+        id += 15;
     }
 
     // Basing id on fitness_level
     id += user.fitness_level;
 
     return id;
+
 }
 
 int calculate_fitness_level(user_t user) {

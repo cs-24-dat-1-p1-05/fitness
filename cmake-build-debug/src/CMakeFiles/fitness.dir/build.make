@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/frederikke/Documents/GitHub/fitness
+CMAKE_SOURCE_DIR = /Users/celina/Documents/GitHub/fitness
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/celina/Documents/GitHub/fitness/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/fitness.dir/depend.make
@@ -70,46 +70,46 @@ include src/CMakeFiles/fitness.dir/progress.make
 include src/CMakeFiles/fitness.dir/flags.make
 
 src/CMakeFiles/fitness.dir/main.c.o: src/CMakeFiles/fitness.dir/flags.make
-src/CMakeFiles/fitness.dir/main.c.o: /Users/frederikke/Documents/GitHub/fitness/src/main.c
+src/CMakeFiles/fitness.dir/main.c.o: /Users/celina/Documents/GitHub/fitness/src/main.c
 src/CMakeFiles/fitness.dir/main.c.o: src/CMakeFiles/fitness.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMakeFiles/fitness.dir/main.c.o"
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/fitness.dir/main.c.o -MF CMakeFiles/fitness.dir/main.c.o.d -o CMakeFiles/fitness.dir/main.c.o -c /Users/frederikke/Documents/GitHub/fitness/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/celina/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMakeFiles/fitness.dir/main.c.o"
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/fitness.dir/main.c.o -MF CMakeFiles/fitness.dir/main.c.o.d -o CMakeFiles/fitness.dir/main.c.o -c /Users/celina/Documents/GitHub/fitness/src/main.c
 
 src/CMakeFiles/fitness.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/fitness.dir/main.c.i"
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/frederikke/Documents/GitHub/fitness/src/main.c > CMakeFiles/fitness.dir/main.c.i
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/celina/Documents/GitHub/fitness/src/main.c > CMakeFiles/fitness.dir/main.c.i
 
 src/CMakeFiles/fitness.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/fitness.dir/main.c.s"
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/frederikke/Documents/GitHub/fitness/src/main.c -o CMakeFiles/fitness.dir/main.c.s
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/celina/Documents/GitHub/fitness/src/main.c -o CMakeFiles/fitness.dir/main.c.s
 
 src/CMakeFiles/fitness.dir/workoutrecommendations.c.o: src/CMakeFiles/fitness.dir/flags.make
-src/CMakeFiles/fitness.dir/workoutrecommendations.c.o: /Users/frederikke/Documents/GitHub/fitness/src/workoutrecommendations.c
+src/CMakeFiles/fitness.dir/workoutrecommendations.c.o: /Users/celina/Documents/GitHub/fitness/src/workoutrecommendations.c
 src/CMakeFiles/fitness.dir/workoutrecommendations.c.o: src/CMakeFiles/fitness.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/fitness.dir/workoutrecommendations.c.o"
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/fitness.dir/workoutrecommendations.c.o -MF CMakeFiles/fitness.dir/workoutrecommendations.c.o.d -o CMakeFiles/fitness.dir/workoutrecommendations.c.o -c /Users/frederikke/Documents/GitHub/fitness/src/workoutrecommendations.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/celina/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/fitness.dir/workoutrecommendations.c.o"
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/fitness.dir/workoutrecommendations.c.o -MF CMakeFiles/fitness.dir/workoutrecommendations.c.o.d -o CMakeFiles/fitness.dir/workoutrecommendations.c.o -c /Users/celina/Documents/GitHub/fitness/src/workoutrecommendations.c
 
 src/CMakeFiles/fitness.dir/workoutrecommendations.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/fitness.dir/workoutrecommendations.c.i"
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/frederikke/Documents/GitHub/fitness/src/workoutrecommendations.c > CMakeFiles/fitness.dir/workoutrecommendations.c.i
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/celina/Documents/GitHub/fitness/src/workoutrecommendations.c > CMakeFiles/fitness.dir/workoutrecommendations.c.i
 
 src/CMakeFiles/fitness.dir/workoutrecommendations.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/fitness.dir/workoutrecommendations.c.s"
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/frederikke/Documents/GitHub/fitness/src/workoutrecommendations.c -o CMakeFiles/fitness.dir/workoutrecommendations.c.s
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/celina/Documents/GitHub/fitness/src/workoutrecommendations.c -o CMakeFiles/fitness.dir/workoutrecommendations.c.s
 
 src/CMakeFiles/fitness.dir/user.c.o: src/CMakeFiles/fitness.dir/flags.make
-src/CMakeFiles/fitness.dir/user.c.o: /Users/frederikke/Documents/GitHub/fitness/src/user.c
+src/CMakeFiles/fitness.dir/user.c.o: /Users/celina/Documents/GitHub/fitness/src/user.c
 src/CMakeFiles/fitness.dir/user.c.o: src/CMakeFiles/fitness.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/CMakeFiles/fitness.dir/user.c.o"
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/fitness.dir/user.c.o -MF CMakeFiles/fitness.dir/user.c.o.d -o CMakeFiles/fitness.dir/user.c.o -c /Users/frederikke/Documents/GitHub/fitness/src/user.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/celina/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/CMakeFiles/fitness.dir/user.c.o"
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/fitness.dir/user.c.o -MF CMakeFiles/fitness.dir/user.c.o.d -o CMakeFiles/fitness.dir/user.c.o -c /Users/celina/Documents/GitHub/fitness/src/user.c
 
 src/CMakeFiles/fitness.dir/user.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/fitness.dir/user.c.i"
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/frederikke/Documents/GitHub/fitness/src/user.c > CMakeFiles/fitness.dir/user.c.i
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/celina/Documents/GitHub/fitness/src/user.c > CMakeFiles/fitness.dir/user.c.i
 
 src/CMakeFiles/fitness.dir/user.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/fitness.dir/user.c.s"
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/frederikke/Documents/GitHub/fitness/src/user.c -o CMakeFiles/fitness.dir/user.c.s
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/celina/Documents/GitHub/fitness/src/user.c -o CMakeFiles/fitness.dir/user.c.s
 
 # Object files for target fitness
 fitness_OBJECTS = \
@@ -125,18 +125,18 @@ src/fitness: src/CMakeFiles/fitness.dir/workoutrecommendations.c.o
 src/fitness: src/CMakeFiles/fitness.dir/user.c.o
 src/fitness: src/CMakeFiles/fitness.dir/build.make
 src/fitness: src/CMakeFiles/fitness.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable fitness"
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fitness.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/celina/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable fitness"
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fitness.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/fitness.dir/build: src/fitness
 .PHONY : src/CMakeFiles/fitness.dir/build
 
 src/CMakeFiles/fitness.dir/clean:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/fitness.dir/cmake_clean.cmake
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/fitness.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/fitness.dir/clean
 
 src/CMakeFiles/fitness.dir/depend:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/frederikke/Documents/GitHub/fitness /Users/frederikke/Documents/GitHub/fitness/src /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/src/CMakeFiles/fitness.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/celina/Documents/GitHub/fitness /Users/celina/Documents/GitHub/fitness/src /Users/celina/Documents/GitHub/fitness/cmake-build-debug /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src /Users/celina/Documents/GitHub/fitness/cmake-build-debug/src/CMakeFiles/fitness.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/CMakeFiles/fitness.dir/depend
 

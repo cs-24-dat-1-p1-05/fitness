@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/frederikke/Documents/GitHub/fitness
+CMAKE_SOURCE_DIR = /Users/celina/Documents/GitHub/fitness
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/celina/Documents/GitHub/fitness/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,14 +97,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/test//CMakeFiles/progress.marks
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles 0
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/celina/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles /Users/celina/Documents/GitHub/fitness/cmake-build-debug/test//CMakeFiles/progress.marks
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/celina/Documents/GitHub/fitness/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -113,22 +113,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/CMakeFiles/test_load_user.dir/rule:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_load_user.dir/rule
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_load_user.dir/rule
 .PHONY : test/CMakeFiles/test_load_user.dir/rule
 
 # Convenience name for target.
@@ -137,12 +137,12 @@ test_load_user: test/CMakeFiles/test_load_user.dir/rule
 
 # fast build rule for target.
 test_load_user/fast:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_load_user.dir/build.make test/CMakeFiles/test_load_user.dir/build
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_load_user.dir/build.make test/CMakeFiles/test_load_user.dir/build
 .PHONY : test_load_user/fast
 
 # Convenience name for target.
 test/CMakeFiles/test_save_user.dir/rule:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_save_user.dir/rule
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_save_user.dir/rule
 .PHONY : test/CMakeFiles/test_save_user.dir/rule
 
 # Convenience name for target.
@@ -151,12 +151,12 @@ test_save_user: test/CMakeFiles/test_save_user.dir/rule
 
 # fast build rule for target.
 test_save_user/fast:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_save_user.dir/build.make test/CMakeFiles/test_save_user.dir/build
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_save_user.dir/build.make test/CMakeFiles/test_save_user.dir/build
 .PHONY : test_save_user/fast
 
 # Convenience name for target.
 test/CMakeFiles/test_returning_user.dir/rule:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_returning_user.dir/rule
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_returning_user.dir/rule
 .PHONY : test/CMakeFiles/test_returning_user.dir/rule
 
 # Convenience name for target.
@@ -165,12 +165,12 @@ test_returning_user: test/CMakeFiles/test_returning_user.dir/rule
 
 # fast build rule for target.
 test_returning_user/fast:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_returning_user.dir/build.make test/CMakeFiles/test_returning_user.dir/build
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_returning_user.dir/build.make test/CMakeFiles/test_returning_user.dir/build
 .PHONY : test_returning_user/fast
 
 # Convenience name for target.
 test/CMakeFiles/test_update_user_files.dir/rule:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_update_user_files.dir/rule
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_update_user_files.dir/rule
 .PHONY : test/CMakeFiles/test_update_user_files.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ test_update_user_files: test/CMakeFiles/test_update_user_files.dir/rule
 
 # fast build rule for target.
 test_update_user_files/fast:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_update_user_files.dir/build.make test/CMakeFiles/test_update_user_files.dir/build
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_update_user_files.dir/build.make test/CMakeFiles/test_update_user_files.dir/build
 .PHONY : test_update_user_files/fast
 
 # Convenience name for target.
 test/CMakeFiles/test_calculate_id.dir/rule:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_calculate_id.dir/rule
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_calculate_id.dir/rule
 .PHONY : test/CMakeFiles/test_calculate_id.dir/rule
 
 # Convenience name for target.
@@ -193,12 +193,12 @@ test_calculate_id: test/CMakeFiles/test_calculate_id.dir/rule
 
 # fast build rule for target.
 test_calculate_id/fast:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_calculate_id.dir/build.make test/CMakeFiles/test_calculate_id.dir/build
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_calculate_id.dir/build.make test/CMakeFiles/test_calculate_id.dir/build
 .PHONY : test_calculate_id/fast
 
 # Convenience name for target.
 test/CMakeFiles/test_display_recommendation.dir/rule:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_display_recommendation.dir/rule
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_display_recommendation.dir/rule
 .PHONY : test/CMakeFiles/test_display_recommendation.dir/rule
 
 # Convenience name for target.
@@ -207,12 +207,12 @@ test_display_recommendation: test/CMakeFiles/test_display_recommendation.dir/rul
 
 # fast build rule for target.
 test_display_recommendation/fast:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_display_recommendation.dir/build.make test/CMakeFiles/test_display_recommendation.dir/build
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_display_recommendation.dir/build.make test/CMakeFiles/test_display_recommendation.dir/build
 .PHONY : test_display_recommendation/fast
 
 # Convenience name for target.
 test/CMakeFiles/test_adjust_recommendation.dir/rule:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_adjust_recommendation.dir/rule
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_adjust_recommendation.dir/rule
 .PHONY : test/CMakeFiles/test_adjust_recommendation.dir/rule
 
 # Convenience name for target.
@@ -221,12 +221,12 @@ test_adjust_recommendation: test/CMakeFiles/test_adjust_recommendation.dir/rule
 
 # fast build rule for target.
 test_adjust_recommendation/fast:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_adjust_recommendation.dir/build.make test/CMakeFiles/test_adjust_recommendation.dir/build
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_adjust_recommendation.dir/build.make test/CMakeFiles/test_adjust_recommendation.dir/build
 .PHONY : test_adjust_recommendation/fast
 
 # Convenience name for target.
 test/CMakeFiles/test_2.dir/rule:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_2.dir/rule
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_2.dir/rule
 .PHONY : test/CMakeFiles/test_2.dir/rule
 
 # Convenience name for target.
@@ -235,12 +235,12 @@ test_2: test/CMakeFiles/test_2.dir/rule
 
 # fast build rule for target.
 test_2/fast:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_2.dir/build.make test/CMakeFiles/test_2.dir/build
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_2.dir/build.make test/CMakeFiles/test_2.dir/build
 .PHONY : test_2/fast
 
 # Convenience name for target.
 test/CMakeFiles/run_tests.dir/rule:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/run_tests.dir/rule
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/run_tests.dir/rule
 .PHONY : test/CMakeFiles/run_tests.dir/rule
 
 # Convenience name for target.
@@ -249,12 +249,12 @@ run_tests: test/CMakeFiles/run_tests.dir/rule
 
 # fast build rule for target.
 run_tests/fast:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests.dir/build.make test/CMakeFiles/run_tests.dir/build
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests.dir/build.make test/CMakeFiles/run_tests.dir/build
 .PHONY : run_tests/fast
 
 # Convenience name for target.
 test/CMakeFiles/final_test.dir/rule:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/final_test.dir/rule
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/final_test.dir/rule
 .PHONY : test/CMakeFiles/final_test.dir/rule
 
 # Convenience name for target.
@@ -263,7 +263,7 @@ final_test: test/CMakeFiles/final_test.dir/rule
 
 # fast build rule for target.
 final_test/fast:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/final_test.dir/build.make test/CMakeFiles/final_test.dir/build
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/final_test.dir/build.make test/CMakeFiles/final_test.dir/build
 .PHONY : final_test/fast
 
 test.o: test.c.o
@@ -271,7 +271,7 @@ test.o: test.c.o
 
 # target to build an object file
 test.c.o:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_2.dir/build.make test/CMakeFiles/test_2.dir/test.c.o
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_2.dir/build.make test/CMakeFiles/test_2.dir/test.c.o
 .PHONY : test.c.o
 
 test.i: test.c.i
@@ -279,7 +279,7 @@ test.i: test.c.i
 
 # target to preprocess a source file
 test.c.i:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_2.dir/build.make test/CMakeFiles/test_2.dir/test.c.i
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_2.dir/build.make test/CMakeFiles/test_2.dir/test.c.i
 .PHONY : test.c.i
 
 test.s: test.c.s
@@ -287,7 +287,7 @@ test.s: test.c.s
 
 # target to generate assembly for a file
 test.c.s:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_2.dir/build.make test/CMakeFiles/test_2.dir/test.c.s
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_2.dir/build.make test/CMakeFiles/test_2.dir/test.c.s
 .PHONY : test.c.s
 
 test_adjust_recommendation.o: test_adjust_recommendation.c.o
@@ -295,7 +295,7 @@ test_adjust_recommendation.o: test_adjust_recommendation.c.o
 
 # target to build an object file
 test_adjust_recommendation.c.o:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_adjust_recommendation.dir/build.make test/CMakeFiles/test_adjust_recommendation.dir/test_adjust_recommendation.c.o
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_adjust_recommendation.dir/build.make test/CMakeFiles/test_adjust_recommendation.dir/test_adjust_recommendation.c.o
 .PHONY : test_adjust_recommendation.c.o
 
 test_adjust_recommendation.i: test_adjust_recommendation.c.i
@@ -303,7 +303,7 @@ test_adjust_recommendation.i: test_adjust_recommendation.c.i
 
 # target to preprocess a source file
 test_adjust_recommendation.c.i:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_adjust_recommendation.dir/build.make test/CMakeFiles/test_adjust_recommendation.dir/test_adjust_recommendation.c.i
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_adjust_recommendation.dir/build.make test/CMakeFiles/test_adjust_recommendation.dir/test_adjust_recommendation.c.i
 .PHONY : test_adjust_recommendation.c.i
 
 test_adjust_recommendation.s: test_adjust_recommendation.c.s
@@ -311,7 +311,7 @@ test_adjust_recommendation.s: test_adjust_recommendation.c.s
 
 # target to generate assembly for a file
 test_adjust_recommendation.c.s:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_adjust_recommendation.dir/build.make test/CMakeFiles/test_adjust_recommendation.dir/test_adjust_recommendation.c.s
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_adjust_recommendation.dir/build.make test/CMakeFiles/test_adjust_recommendation.dir/test_adjust_recommendation.c.s
 .PHONY : test_adjust_recommendation.c.s
 
 test_calculate_id.o: test_calculate_id.c.o
@@ -319,7 +319,7 @@ test_calculate_id.o: test_calculate_id.c.o
 
 # target to build an object file
 test_calculate_id.c.o:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_calculate_id.dir/build.make test/CMakeFiles/test_calculate_id.dir/test_calculate_id.c.o
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_calculate_id.dir/build.make test/CMakeFiles/test_calculate_id.dir/test_calculate_id.c.o
 .PHONY : test_calculate_id.c.o
 
 test_calculate_id.i: test_calculate_id.c.i
@@ -327,7 +327,7 @@ test_calculate_id.i: test_calculate_id.c.i
 
 # target to preprocess a source file
 test_calculate_id.c.i:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_calculate_id.dir/build.make test/CMakeFiles/test_calculate_id.dir/test_calculate_id.c.i
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_calculate_id.dir/build.make test/CMakeFiles/test_calculate_id.dir/test_calculate_id.c.i
 .PHONY : test_calculate_id.c.i
 
 test_calculate_id.s: test_calculate_id.c.s
@@ -335,7 +335,7 @@ test_calculate_id.s: test_calculate_id.c.s
 
 # target to generate assembly for a file
 test_calculate_id.c.s:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_calculate_id.dir/build.make test/CMakeFiles/test_calculate_id.dir/test_calculate_id.c.s
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_calculate_id.dir/build.make test/CMakeFiles/test_calculate_id.dir/test_calculate_id.c.s
 .PHONY : test_calculate_id.c.s
 
 test_display_recommendation.o: test_display_recommendation.c.o
@@ -343,7 +343,7 @@ test_display_recommendation.o: test_display_recommendation.c.o
 
 # target to build an object file
 test_display_recommendation.c.o:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_display_recommendation.dir/build.make test/CMakeFiles/test_display_recommendation.dir/test_display_recommendation.c.o
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_display_recommendation.dir/build.make test/CMakeFiles/test_display_recommendation.dir/test_display_recommendation.c.o
 .PHONY : test_display_recommendation.c.o
 
 test_display_recommendation.i: test_display_recommendation.c.i
@@ -351,7 +351,7 @@ test_display_recommendation.i: test_display_recommendation.c.i
 
 # target to preprocess a source file
 test_display_recommendation.c.i:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_display_recommendation.dir/build.make test/CMakeFiles/test_display_recommendation.dir/test_display_recommendation.c.i
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_display_recommendation.dir/build.make test/CMakeFiles/test_display_recommendation.dir/test_display_recommendation.c.i
 .PHONY : test_display_recommendation.c.i
 
 test_display_recommendation.s: test_display_recommendation.c.s
@@ -359,7 +359,7 @@ test_display_recommendation.s: test_display_recommendation.c.s
 
 # target to generate assembly for a file
 test_display_recommendation.c.s:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_display_recommendation.dir/build.make test/CMakeFiles/test_display_recommendation.dir/test_display_recommendation.c.s
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_display_recommendation.dir/build.make test/CMakeFiles/test_display_recommendation.dir/test_display_recommendation.c.s
 .PHONY : test_display_recommendation.c.s
 
 test_load_user.o: test_load_user.c.o
@@ -367,7 +367,7 @@ test_load_user.o: test_load_user.c.o
 
 # target to build an object file
 test_load_user.c.o:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_load_user.dir/build.make test/CMakeFiles/test_load_user.dir/test_load_user.c.o
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_load_user.dir/build.make test/CMakeFiles/test_load_user.dir/test_load_user.c.o
 .PHONY : test_load_user.c.o
 
 test_load_user.i: test_load_user.c.i
@@ -375,7 +375,7 @@ test_load_user.i: test_load_user.c.i
 
 # target to preprocess a source file
 test_load_user.c.i:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_load_user.dir/build.make test/CMakeFiles/test_load_user.dir/test_load_user.c.i
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_load_user.dir/build.make test/CMakeFiles/test_load_user.dir/test_load_user.c.i
 .PHONY : test_load_user.c.i
 
 test_load_user.s: test_load_user.c.s
@@ -383,7 +383,7 @@ test_load_user.s: test_load_user.c.s
 
 # target to generate assembly for a file
 test_load_user.c.s:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_load_user.dir/build.make test/CMakeFiles/test_load_user.dir/test_load_user.c.s
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_load_user.dir/build.make test/CMakeFiles/test_load_user.dir/test_load_user.c.s
 .PHONY : test_load_user.c.s
 
 test_returning_user.o: test_returning_user.c.o
@@ -391,7 +391,7 @@ test_returning_user.o: test_returning_user.c.o
 
 # target to build an object file
 test_returning_user.c.o:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_returning_user.dir/build.make test/CMakeFiles/test_returning_user.dir/test_returning_user.c.o
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_returning_user.dir/build.make test/CMakeFiles/test_returning_user.dir/test_returning_user.c.o
 .PHONY : test_returning_user.c.o
 
 test_returning_user.i: test_returning_user.c.i
@@ -399,7 +399,7 @@ test_returning_user.i: test_returning_user.c.i
 
 # target to preprocess a source file
 test_returning_user.c.i:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_returning_user.dir/build.make test/CMakeFiles/test_returning_user.dir/test_returning_user.c.i
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_returning_user.dir/build.make test/CMakeFiles/test_returning_user.dir/test_returning_user.c.i
 .PHONY : test_returning_user.c.i
 
 test_returning_user.s: test_returning_user.c.s
@@ -407,7 +407,7 @@ test_returning_user.s: test_returning_user.c.s
 
 # target to generate assembly for a file
 test_returning_user.c.s:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_returning_user.dir/build.make test/CMakeFiles/test_returning_user.dir/test_returning_user.c.s
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_returning_user.dir/build.make test/CMakeFiles/test_returning_user.dir/test_returning_user.c.s
 .PHONY : test_returning_user.c.s
 
 test_save_user.o: test_save_user.c.o
@@ -415,7 +415,7 @@ test_save_user.o: test_save_user.c.o
 
 # target to build an object file
 test_save_user.c.o:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_save_user.dir/build.make test/CMakeFiles/test_save_user.dir/test_save_user.c.o
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_save_user.dir/build.make test/CMakeFiles/test_save_user.dir/test_save_user.c.o
 .PHONY : test_save_user.c.o
 
 test_save_user.i: test_save_user.c.i
@@ -423,7 +423,7 @@ test_save_user.i: test_save_user.c.i
 
 # target to preprocess a source file
 test_save_user.c.i:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_save_user.dir/build.make test/CMakeFiles/test_save_user.dir/test_save_user.c.i
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_save_user.dir/build.make test/CMakeFiles/test_save_user.dir/test_save_user.c.i
 .PHONY : test_save_user.c.i
 
 test_save_user.s: test_save_user.c.s
@@ -431,7 +431,7 @@ test_save_user.s: test_save_user.c.s
 
 # target to generate assembly for a file
 test_save_user.c.s:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_save_user.dir/build.make test/CMakeFiles/test_save_user.dir/test_save_user.c.s
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_save_user.dir/build.make test/CMakeFiles/test_save_user.dir/test_save_user.c.s
 .PHONY : test_save_user.c.s
 
 test_update_user_files.o: test_update_user_files.c.o
@@ -439,7 +439,7 @@ test_update_user_files.o: test_update_user_files.c.o
 
 # target to build an object file
 test_update_user_files.c.o:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_update_user_files.dir/build.make test/CMakeFiles/test_update_user_files.dir/test_update_user_files.c.o
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_update_user_files.dir/build.make test/CMakeFiles/test_update_user_files.dir/test_update_user_files.c.o
 .PHONY : test_update_user_files.c.o
 
 test_update_user_files.i: test_update_user_files.c.i
@@ -447,7 +447,7 @@ test_update_user_files.i: test_update_user_files.c.i
 
 # target to preprocess a source file
 test_update_user_files.c.i:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_update_user_files.dir/build.make test/CMakeFiles/test_update_user_files.dir/test_update_user_files.c.i
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_update_user_files.dir/build.make test/CMakeFiles/test_update_user_files.dir/test_update_user_files.c.i
 .PHONY : test_update_user_files.c.i
 
 test_update_user_files.s: test_update_user_files.c.s
@@ -455,7 +455,7 @@ test_update_user_files.s: test_update_user_files.c.s
 
 # target to generate assembly for a file
 test_update_user_files.c.s:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_update_user_files.dir/build.make test/CMakeFiles/test_update_user_files.dir/test_update_user_files.c.s
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_update_user_files.dir/build.make test/CMakeFiles/test_update_user_files.dir/test_update_user_files.c.s
 .PHONY : test_update_user_files.c.s
 
 # Help Target
@@ -512,6 +512,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/frederikke/Documents/GitHub/fitness/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/celina/Documents/GitHub/fitness/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
